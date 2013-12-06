@@ -219,7 +219,4 @@ workspace_auto_back_and_forth yes
 exec --no-startup-id $term # terminal
 exec --no-startup-id /home/jjin/bin/ranwall_time 60
 exec --no-startup-id devmon --ignore-label "EFI"
-exec --no-startup-id nm-applet # network manager
-exec --no-startup-id kupfer
-exec --no-startup-id mpd
 exec --no-startup-id compton --config ~/dotfiles/compton.conf -b
