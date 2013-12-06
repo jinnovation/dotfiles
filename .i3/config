@@ -129,26 +129,17 @@ bindsym Mod4+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym Mod4+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym n           resize shrink width 2 px or 2 ppt
         bindsym e           resize grow height 2 px or 2 ppt
         bindsym i           resize shrink height 2 px or 2 ppt
         bindsym o           resize grow width 2 px or 2 ppt
 
-        # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 2 px or 2 ppt
         bindsym Down        resize grow height 2 px or 2 ppt
         bindsym Up          resize shrink height 2 px or 2 ppt
         bindsym Right       resize grow width 2 px or 2 ppt
 
-        # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
@@ -176,26 +167,9 @@ bar {
     }
 }
 
-# bar {
-#     i3bar_command i3bar-icons
-#     position bottom
-#     workspace_buttons no
-#     tray_output none
-#     status_command /home/jjin/.config/conky-i3bar-news-ticker
-#     mode dock
-
-#     colors {
-#         background #000000
-#         statusline #999999
-#         separator  #444444
-#     }
-# }
-
 new_float none
 new_window pixel 1
 
-# bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-# bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym Print exec scrot
