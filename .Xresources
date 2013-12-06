@@ -12,7 +12,7 @@ URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0000/dddd
 
 ! Use the specified colour as the windows foreground colour [default Black];
-!  URxvt*foreground: #ffffff
+URxvt*foreground: #dddddd
 
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-
 ! URxvt*colorn: colour
@@ -251,7 +251,7 @@ URxvt*font: xft:Droid Sans Mono:size=8:antialias=true
 ! URxvt*searchable-scrollback: keysym
 
 ! Specifies the program to be started with a URL argument. Used by the
-URxvt*url-launcher: google-chrome
+URxvt*url-launcher: chromium
 
 ! Compile frills: Sets the WM_TRANSIENT_FOR property to the given window id.
 ! URxvt*transient-for: windowid
@@ -268,11 +268,6 @@ URxvt*url-launcher: google-chrome
 ! vtwheel: mouse scrollwheel support
 ! font-size: allows change font size on fly
 URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel
-
-URxvt*keysym*F11: perl:fullscreen:switch
-
-
-urxvt*foreground: #dddddd
 
 *color0:  #272822
 *color1:  #383830
