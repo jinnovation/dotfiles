@@ -21,6 +21,7 @@
 ;;(require 'tex-site) ;; activates auctex
 ;;(require 'ess-site)
 
+(require 'autopair)
 ;; (require 'autopair-latex)
 
 (require 'highlight-indentation)
@@ -48,35 +49,6 @@
   "Prevents frame from being used to display any other buffer"
   (interactive)
   (set-window-dedicated-p (frame-selected-window) t))
-
-;; (defun jjin-layout ()
-;;   "enable personal 'IDE' on startup"
-;;   (interactive)
-;;   (split-window-right)
-;;   (other-window 1)
-;;   (switch-to-buffer "*Messages*")
-;;   (split-window-below)
-;;   (other-window 1)
-;;   (shell)
-;;   (lock-window)
-;;   (linum-mode -1)
-;;   ;; (dired (substring (pwd) 10)) ;; open dired @ current working directory
-;;   (other-window 1)
-;;   (golden-ratio)
-;;   (other-window -1)
-;;   (enlarge-window -3)
-;;   (other-window 1))
-
-;; (add-hook 'after-init-hook 'jjin-layout)
-
-;; ==== OTHER HOOKS ====
-;; (defun fullscreen (&optional f)
-;;        (interactive)
-;;        (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-;; 	    		 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
-;;        (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-;; 	    		 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
-;; (add-hook 'window-setup-hook 'fullscreen)
 
 (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
 ;; =============================================================================
