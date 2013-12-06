@@ -168,15 +168,11 @@
 ;; (set-face-attribute 'default nil :font "Monospace-8")
 ;; (set-face-attribute 'default nil :font "Droid Sans Mono-8")
 
-(defun dynamic-font-size ()
-  (interactive)
-  (if window-system
-      (progn
-	(if (> (x-display-pixel-width) 1080)
-	    (set-face-attribute 'default nil :font "Droid Sans Mono-11")
-	  (set-face-attribute 'default nil :font "Droid Sans Mono-8")))))
-
-(dynamic-font-size)
+(if window-system
+    (progn
+      (if (> (x-display-pixel-width) 1080)
+	  (set-face-attribute 'default nil :font "Droid Sans Mono-11")
+	(set-face-attribute 'default nil :font "Droid Sans Mono-8"))))
 
 ;; (load "/home/jjin/.emacs.d/nxhtml/autostart.el")
 ;; (setq mumamo-background-colors nil)
