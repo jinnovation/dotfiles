@@ -10,9 +10,10 @@
 (add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 
-(setq required-modes '(python-mode ruby-mode actionscript-mode fic-ext-mode
-				   markdown-mode markdown-mode+ rainbow-mode
-				   rspec-mode sass-mode))
+(setq required-modes '(ruby-mode actionscript-mode fic-ext-mode
+				 markdown-mode markdown-mode+
+				 rainbow-mode rspec-mode
+				 sass-mode))
 
 (setq required-ruby-packages '(ruby-block ruby-compilation ruby-end ruby-tools))
 
