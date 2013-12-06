@@ -1,7 +1,3 @@
-(require 'tex-site) ;; activates auctex
-;;(require 'ess-site)
-
-;; (require 'autopair-latex)
 (require 'package)
 (add-to-list 'package-archives
 	     '("marmalade" . "http://marmalade-repo.org/packages/")
@@ -13,6 +9,19 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")
 (add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
+
+(setq required-packages '(auctex monokai-theme tango-2-theme autopair))
+
+(mapc (lambda (package)
+	(or (package-installed-p package)
+	    (if (y-or-n-p (format "Package %s is missing. Install?" package))
+		(package-install package))))
+      required-packages)
+
+;;(require 'tex-site) ;; activates auctex
+;;(require 'ess-site)
+
+;; (require 'autopair-latex)
 
 (require 'highlight-indentation)
 
