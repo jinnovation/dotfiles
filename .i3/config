@@ -228,4 +228,4 @@ exec --no-startup-id devmon --ignore-label "EFI"
 exec --no-startup-id nm-applet # network manager
 exec --no-startup-id kupfer
 exec --no-startup-id mpd
-exec --no-startup-id compton --config ~/.dotfiles/compton.conf -b
+exec --no-startup-id compton --config ~/dotfiles/compton.conf -b
