@@ -166,7 +166,17 @@
 (set-transparency 90)
 
 ;; (set-face-attribute 'default nil :font "Monospace-8")
-(set-face-attribute 'default nil :font "Droid Sans Mono-8")
+;; (set-face-attribute 'default nil :font "Droid Sans Mono-8")
+
+(defun dynamic-font-size ()
+  (interactive)
+  (if window-system
+      (progn
+	(if (> (x-display-pixel-width) 1080)
+	    (set-face-attribute 'default nil :font "Droid Sans Mono-11")
+	  (set-face-attribute 'default nil :font "Droid Sans Mono-8")))))
+
+(dynamic-font-size)
 
 ;; (load "/home/jjin/.emacs.d/nxhtml/autostart.el")
 ;; (setq mumamo-background-colors nil)
@@ -180,6 +190,5 @@
 (eval-after-load "tex" 
   '(setcdr (assoc "LaTeX" TeX-command-list)
           '("%`%l%(mode) -shell-escape%' %t"
-          TeX-run-TeX nil (latex-mode doctex-mode) :help "Run LaTeX")
-    )
-  )
+          TeX-run-TeX nil (latex-mode doctex-mode) :help "Run LaTeX")))
+
