@@ -8,17 +8,15 @@
 ! URxvt*geometry: geom
 
 ! Use the specified colour as the windows background colour [default White];
-URxvt*background: #000000
-URxvt*transparent: true
-URxvt*shading: 20
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0000/dddd
 
 ! Use the specified colour as the windows foreground colour [default Black];
- URxvt*foreground: #ffffff
+!  URxvt*foreground: #ffffff
 
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-
 ! URxvt*colorn: colour
 
-! 
 ! URxvt*colorBD: colour
 
 ! Use the specified colour to display bold or italic characters when the foreground
@@ -275,7 +273,6 @@ URxvt*keysym*F11: perl:fullscreen:switch
 
 
 urxvt*foreground: #dddddd
-urxvt*background: #000000
 
 *color0:  #272822
 *color1:  #383830
