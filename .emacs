@@ -1,7 +1,7 @@
 (require 'package)
 (add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/")
-	     '("melpa" . "http://melpa.milkbox.net/packages/"))
+	     '("melpa" . "http://melpa.milkbox.net/packages/")
+	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -10,7 +10,18 @@
 (add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 
-(setq required-packages '(auctex monokai-theme tango-2-theme autopair))
+(setq required-modes '(python-mode ruby-mode actionscript-mode fic-ext-mode
+				   markdown-mode markdown-mode+ rainbow-mode
+				   rspec-mode sass-mode))
+
+(setq required-ruby-packages '(ruby-block ruby-compilation ruby-end ruby-tools))
+
+(setq required-themes '(monokai-theme tango-2-theme molokai-theme
+				      solarized-theme tronesque-theme))
+
+(setq required-packages (append required-modes required-themes
+				required-ruby-packages
+				'(auctex autopair)))
 
 (mapc (lambda (package)
 	(or (package-installed-p package)
