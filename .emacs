@@ -120,10 +120,7 @@
 
 (global-set-key (kbd "C-<backspace>") 'undo)
 
-(global-set-key (kbd "C-x p")
-		(lambda ()
-		  (interactive)
-		  (other-window -1)))
+(global-set-key (kbd "C-x p") (lambda () (interactive) (other-window -1)))
 
 
 (custom-set-variables
