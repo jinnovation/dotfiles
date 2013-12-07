@@ -12,7 +12,7 @@ URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0000/5555
 
 ! Use the specified colour as the windows foreground colour [default Black];
-!  URxvt*foreground: #ffffff
+URxvt*foreground: #dddddd
 
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-
 ! URxvt*colorn: colour
@@ -268,11 +268,6 @@ URxvt*url-launcher: chromium
 ! vtwheel: mouse scrollwheel support
 ! font-size: allows change font size on fly
 URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel
-
-URxvt*keysym*F11: perl:fullscreen:switch
-
-
-urxvt*foreground: #dddddd
 
 *color0:  #272822
 *color1:  #383830
