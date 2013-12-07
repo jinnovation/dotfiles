@@ -9,7 +9,7 @@
 
 ! Use the specified colour as the windows background colour [default White];
 URxvt*depth: 32
-URxvt*background: rgba:0000/0000/0000/dddd
+URxvt*background: rgba:0000/0000/0000/5555
 
 ! Use the specified colour as the windows foreground colour [default Black];
 !  URxvt*foreground: #ffffff
@@ -251,7 +251,7 @@ URxvt*font: xft:Droid Sans Mono:size=8:antialias=true
 ! URxvt*searchable-scrollback: keysym
 
 ! Specifies the program to be started with a URL argument. Used by the
-URxvt*url-launcher: google-chrome
+URxvt*url-launcher: chromium
 
 ! Compile frills: Sets the WM_TRANSIENT_FOR property to the given window id.
 ! URxvt*transient-for: windowid
