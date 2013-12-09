@@ -165,6 +165,8 @@
 (add-to-list 'auto-mode-alist '("conky" . rainbow-mode))
 (add-to-list 'auto-mode-alist '("conky" . conf-space-mode))
 
+(add-to-list 'auto-mode-alist '("rc$" . conf-mode))
+
 (setq inhibit-startup-screen t)
 
 (add-hook 'comint-output-filter-functions
