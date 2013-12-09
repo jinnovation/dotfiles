@@ -302,3 +302,11 @@ URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel
 !*color13:  #AD7FA8
 !*color14:  #fcaf3e
 !*color15:  #EEEEEC
+
+ URxvt.keysym.C-Up:     perl:font-size:increase
+ URxvt.keysym.C-Down:   perl:font-size:decrease
+ URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+ URxvt.keysym.C-S-Down: perl:font-size:decglobal
+
+ URxvt.iso14755: false
+ URxvt.iso14755_52: false
