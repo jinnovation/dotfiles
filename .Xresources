@@ -9,7 +9,7 @@
 
 ! Use the specified colour as the windows background colour [default White];
 URxvt*depth: 32
-URxvt*background: rgba:0000/0000/0000/9999
+URxvt*background: rgba:0000/0000/0000/5555
 
 ! Use the specified colour as the windows foreground colour [default Black];
 URxvt*foreground: #dddddd
@@ -230,8 +230,6 @@ URxvt*font: xft:Droid Sans Mono:size=8:antialias=true
 ! Compile frills: Associate string with keysym sym. The intervening resource name
 ! URxvt*keysym.sym: string
 
-! URxvt*perl-ext-common: string
-
 ! Comma-separated list(s) of perl extension scripts (default: "default") to use in
 ! URxvt*perl-ext: string
 
@@ -267,7 +265,7 @@ URxvt*url-launcher: chromium
 
 ! vtwheel: mouse scrollwheel support
 ! font-size: allows change font size on fly
-URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel
+URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel, font-size
 
 *color0:  #272822
 *color1:  #383830
@@ -302,3 +300,9 @@ URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel
 !*color13:  #AD7FA8
 !*color14:  #fcaf3e
 !*color15:  #EEEEEC
+
+ URxvt*keysym.C-Up:     perl:font-size:increase
+ URxvt*keysym.C-Down:   perl:font-size:decrease
+ URxvt*keysym.C-S-Up:   perl:font-size:incglobal
+ URxvt*keysym.C-S-Down: perl:font-size:decglobal
+ 
