@@ -1,4 +1,7 @@
-
+unmap j
+unmap k
+unmap h
+unmap l
 
 map [index] n index_navigate next
 map [index] e index_navigate previous
