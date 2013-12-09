@@ -3,6 +3,9 @@ unmap k
 unmap h
 unmap l
 
+unmap C-d
+unmap C-u
+
 map [index] n index_navigate next
 map [index] e index_navigate previous
 
