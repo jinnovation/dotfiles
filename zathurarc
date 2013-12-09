@@ -1,5 +1,5 @@
-map [index] n scroll down
-map [index] e scroll up
+map [index] n index_navigate next
+map [index] e index_navigate previous
 
 map n scroll down
 map e scroll up 
