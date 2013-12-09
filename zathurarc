@@ -1,2 +1,5 @@
+map [index] n scroll down
+map [index] e scroll up
+
 map n scroll down
 map e scroll up 
