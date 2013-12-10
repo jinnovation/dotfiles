@@ -3,13 +3,12 @@ unmap k
 unmap h
 unmap l
 
-unmap C-d
-unmap C-u
+unmap <C-d>
+unmap <C-u>
 
 # FIXME
 map [index] n index_navigate next
 map [index] e index_navigate previous
-
 
 map n scroll down
 map e scroll up
