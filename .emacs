@@ -177,7 +177,7 @@
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value (0 - 100 opaque): ")
   (set-frame-parameter (selected-frame) 'alpha value))
-(set-transparency 90)
+(set-transparency 75)
 
 (setq main-font "Droid Sans Mono")
 (setq small-font-size "8")
