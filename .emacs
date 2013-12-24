@@ -179,18 +179,18 @@
   (set-frame-parameter (selected-frame) 'alpha value))
 (set-transparency 75)
 
-(setq main-font "Droid Sans Mono")
-(setq small-font-size "8")
-(setq bigger-font-size "11")
+(setq font-face-main "Droid Sans Mono")
+(setq font-size-small "8")
+(setq font-size-bigger "11")
 
-(setq bigger-font-setting (format "%s-%s" main-font bigger-font-size))
-(setq small-font-setting (format "%s-%s" main-font small-font-size))
+(setq font-setting-bigger (format "%s-%s" font-face-main font-size-bigger))
+(setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
 (if window-system
     (progn
       (if (> (x-display-pixel-width) 1920)
-	  (set-face-attribute 'default nil :font bigger-font-setting)
-	(set-face-attribute 'default nil :font small-font-setting))))
+	  (set-face-attribute 'default nil :font font-setting-bigger)
+	(set-face-attribute 'default nil :font font-setting-small))))
 
 ;; (load "/home/jjin/.emacs.d/nxhtml/autostart.el")
 ;; (setq mumamo-background-colors nil)
