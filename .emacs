@@ -1,3 +1,5 @@
+;; TODO: account for CLI mode in settings (highline etc)
+
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/")
