@@ -1,3 +1,5 @@
+(add-to-list 'load-path (expand-file-name "~/site-lisp/"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/")
@@ -7,8 +9,6 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")
-(add-to-list 'load-path (expand-file-name "~/site-lisp/"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 
 (setq required-modes '(ruby-mode actionscript-mode fic-ext-mode
 				 markdown-mode markdown-mode+
