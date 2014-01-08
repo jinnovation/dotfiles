@@ -6,9 +6,11 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")
+(when (> 23 (emacs-major-version))
+    (progn
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
 (setq required-modes '(ruby-mode actionscript-mode fic-ext-mode
 				 markdown-mode markdown-mode+
