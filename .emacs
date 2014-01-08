@@ -1,4 +1,4 @@
-;; TODO: account for CLI mode in settings (highline etc)
+; TODO: account for CLI mode in settings (highline etc)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -163,11 +163,10 @@
 (setq font-setting-bigger (format "%s-%s" font-face-main font-size-bigger))
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
-(if window-system
-    (progn
-      (if (> (x-display-pixel-width) 1920)
-	  (set-face-attribute 'default nil :font font-setting-bigger)
-	(set-face-attribute 'default nil :font font-setting-small))))
+(when (display-graphic-p nil)
+  (if (> (x-display-pixel-height) 1080)
+      (set-face-attribute 'default nil :font font-setting-bigger)
+    (set-face-attribute 'default nil :font font-setting-small)))
 
 ;; (load "/home/jjin/.emacs.d/nxhtml/autostart.el")
 ;; (setq mumamo-background-colors nil)
