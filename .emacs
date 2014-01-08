@@ -1,3 +1,6 @@
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'meta))
+
 (add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (require 'package)
@@ -187,6 +190,8 @@
 
 (setq font-setting-bigger (format "%s-%s" font-face-main font-size-bigger))
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
+
+
 
 (if window-system
     (progn
