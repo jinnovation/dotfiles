@@ -6,7 +6,7 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-(when (> 23 (emacs-major-version))
+(when (> 23 emacs-major-version)
     (progn
       (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
       (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
