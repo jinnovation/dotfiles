@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 ; TODO: account for CLI mode in settings (highline etc)
 
-=======
 (when (eq system-type 'darwin)
   (setq mac-command-modifier 'meta))
 
@@ -12,10 +10,9 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
-
 (add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
->>>>>>> 884338bbe2765ae6003a55d96c705a790bf74f19
+
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/")
@@ -180,11 +177,14 @@
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 (when (display-graphic-p nil)
   (if (> (x-display-pixel-height) 1080)
       (set-face-attribute 'default nil :font font-setting-bigger)
     (set-face-attribute 'default nil :font font-setting-small)))
 =======
+=======
+>>>>>>> 884338bbe2765ae6003a55d96c705a790bf74f19
 
 
 (if window-system
@@ -192,7 +192,6 @@
       (if (> (x-display-pixel-width) 1920)
 	  (set-face-attribute 'default nil :font font-setting-bigger)
 	(set-face-attribute 'default nil :font font-setting-small))))
->>>>>>> 884338bbe2765ae6003a55d96c705a790bf74f19
 
 ;; (load "/home/jjin/.emacs.d/nxhtml/autostart.el")
 ;; (setq mumamo-background-colors nil)
