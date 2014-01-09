@@ -2,7 +2,6 @@
 
 (defconst user-init-dir "~/.emacs.d/")
 
-(add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
