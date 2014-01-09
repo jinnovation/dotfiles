@@ -16,7 +16,6 @@
 (add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 
-(require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/")
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -51,11 +50,6 @@
 
 ;;(require 'tex-site) ;; activates auctex
 ;;(require 'ess-site)
-
-(require 'autopair)
-;; (require 'autopair-latex)
-
-(require 'highlight-indentation)
 
 (defun lock-window ()
   "Prevents frame from being used to display any other buffer"
