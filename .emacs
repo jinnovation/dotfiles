@@ -2,6 +2,14 @@
 
 (defconst user-init-dir "~/.emacs.d/")
 
+(add-to-list 'load-path (expand-file-name "~/site-lisp/"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
+
+(setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
+			 ("marmalade" . "http://marmalade-repo.org/packages/")))
+
+(package-initialize)
+
 (defun load-user-file (file)
   (interactive "f")
   "Load a file in current user's configuration directory"
@@ -14,20 +22,6 @@
 (when (eq system-type 'darwin)
   (setq mac-command-modifier 'meta))
 
-(add-to-list 'load-path (expand-file-name "~/site-lisp/"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
-
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/")
-	     '("marmalade" . "http://marmalade-repo.org/packages/"))
-
-(package-initialize)
-
-(when (>= emacs-major-version 24)
-    (progn
-      (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
-      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
 ;; TODO: remove these; more trouble than worth
 (setq required-modes '(ruby-mode actionscript-mode fic-ext-mode
@@ -79,3 +73,5 @@
 
 ;; (load "/home/jjin/.emacs.d/nxhtml/autostart.el")
 ;; (setq mumamo-background-colors nil)
+
+

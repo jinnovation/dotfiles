@@ -1,3 +1,10 @@
+;; PREFS BEGIN
+(when (>= emacs-major-version 24)
+  (progn
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
+
 (load-theme 'tango-2 t)
 
 (setq inhibit-startup-screen t)
