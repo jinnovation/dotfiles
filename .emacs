@@ -1,8 +1,5 @@
 ; TODO: account for CLI mode in settings (highline etc)
 
-(when (eq system-type 'darwin)
-  (setq mac-command-modifier 'meta))
-
 (defconst user-init-dir "~/.emacs.d/")
 
 (defun load-user-file (file)
@@ -12,6 +9,9 @@
 
 (load-user-file "keybinding.el")
 (load-user-file "prefs.el")
+
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'meta))
 
 (add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
