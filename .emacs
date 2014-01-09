@@ -7,6 +7,7 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
+(load-user-file "require.el")
 (load-user-file "keybinding.el")
 (load-user-file "prefs.el")
 
@@ -19,6 +20,7 @@
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/")
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 (package-initialize)
 
 (when (>= emacs-major-version 24)
