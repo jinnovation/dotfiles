@@ -1,16 +1,32 @@
+<<<<<<< HEAD
 ; TODO: account for CLI mode in settings (highline etc)
 
+=======
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'meta))
+
+(defconst user-init-dir "~/.emacs.d/")
+
+(defun load-user-file (file)
+  (interactive "f")
+  "Load a file in current user's configuration directory"
+  (load-file (expand-file-name file user-init-dir)))
+
+
+(add-to-list 'load-path (expand-file-name "~/site-lisp/"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
+>>>>>>> 884338bbe2765ae6003a55d96c705a790bf74f19
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/")
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")
-(add-to-list 'load-path (expand-file-name "~/site-lisp/"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
+(when (>= emacs-major-version 24)
+    (progn
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
+      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
 (setq required-modes '(ruby-mode actionscript-mode fic-ext-mode
 				 markdown-mode markdown-mode+
@@ -163,10 +179,20 @@
 (setq font-setting-bigger (format "%s-%s" font-face-main font-size-bigger))
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
+<<<<<<< HEAD
 (when (display-graphic-p nil)
   (if (> (x-display-pixel-height) 1080)
       (set-face-attribute 'default nil :font font-setting-bigger)
     (set-face-attribute 'default nil :font font-setting-small)))
+=======
+
+
+(if window-system
+    (progn
+      (if (> (x-display-pixel-width) 1920)
+	  (set-face-attribute 'default nil :font font-setting-bigger)
+	(set-face-attribute 'default nil :font font-setting-small))))
+>>>>>>> 884338bbe2765ae6003a55d96c705a790bf74f19
 
 ;; (load "/home/jjin/.emacs.d/nxhtml/autostart.el")
 ;; (setq mumamo-background-colors nil)
