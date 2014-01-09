@@ -1,6 +1,14 @@
 (when (eq system-type 'darwin)
   (setq mac-command-modifier 'meta))
 
+(defconst user-init-dir "~/.emacs.d/")
+
+(defun load-user-file (file)
+  (interactive "f")
+  "Load a file in current user's configuration directory"
+  (load-file (expand-file-name file user-init-dir)))
+
+
 (add-to-list 'load-path (expand-file-name "~/site-lisp/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (require 'package)
