@@ -176,16 +176,10 @@
 (setq font-setting-bigger (format "%s-%s" font-face-main font-size-bigger))
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 (when (display-graphic-p nil)
   (if (> (x-display-pixel-height) 1080)
       (set-face-attribute 'default nil :font font-setting-bigger)
     (set-face-attribute 'default nil :font font-setting-small)))
-=======
-=======
->>>>>>> 884338bbe2765ae6003a55d96c705a790bf74f19
-
 
 (if window-system
     (progn
