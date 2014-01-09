@@ -28,6 +28,7 @@
       (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
       (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
+;; TODO: remove these; more trouble than worth
 (setq required-modes '(ruby-mode actionscript-mode fic-ext-mode
 				 markdown-mode markdown-mode+
 				 rainbow-mode rspec-mode
