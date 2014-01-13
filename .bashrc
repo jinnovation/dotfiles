@@ -115,6 +115,7 @@ unset safe_term match_lhs
 alias ls='ls --color=auto'
 alias pacman='sudo pacman'
 alias chrome='google-chrome'
+alias gitk='gitk --all'
 
 alias open='xdg-open'
 
