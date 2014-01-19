@@ -76,11 +76,14 @@
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
 (when (display-graphic-p nil)
-  (if (> (x-display-pixel-height) (x-display-pixel-width))
-      (if (> (x-display-pixel-width) 1920)
-	  (set-face-attribute 'default nil :font font-setting-bigger)
-	(set-face-attribute 'default nil :font font-setting-small))
-    (set-face-attribute 'default nil :font font-setting-small)))
+  (cond ((> (x-display-pixel-height) (x-display-pixel-width))
+	 (if (> (x-display-pixel-width) 1920)
+	     (set-face-attribute 'default nil :font font-setting-bigger)
+	   (set-face-attribute 'default nil :font font-setting-small)))
+	((> (x-display-pixel-width) (x-display-pixel-height))
+	 (if (> (x-display-pixel-height) 1080)
+	     (set-face-attribute 'default nil :font font-setting-bigger)
+	   (set-face-attribute 'default nil :font font-setting-small)))))
 
 (eval-after-load "tex" 
   '(setcdr (assoc "LaTeX" TeX-command-list)
