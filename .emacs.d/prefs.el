@@ -5,7 +5,8 @@
       (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
       (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
-(load-theme 'tango-2 t)
+;; (load-theme 'tango-2 t)
+(load-theme 'monokai t)
 
 (setq inhibit-startup-screen t)
 
@@ -87,3 +88,8 @@
 	    TeX-run-TeX nil (latex-mode doctex-mode) :help "Run LaTeX")))
 
 (setq c-block-comment-prefix "* ")
+
+(set-background-color "#121212")
+
+(set-face-background 'fringe "#111111")
+(set-face-background 'linum  "#111111")
