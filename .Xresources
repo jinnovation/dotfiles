@@ -267,22 +267,47 @@ URxvt*url-launcher: chromium
 ! font-size: allows change font size on fly
 URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel, font-size
 
-*color0:  #272822
-*color1:  #383830
-*color2:  #49483e
-*color3:  #75715e
-*color4:  #a59f85
-*color5:  #f8f8f2
-*color6:  #f5f4f1
-*color7:  #f9f8f5
-*color8:  #fd971f
-*color9:  #f4bf75
-*color10: #ae81ff
-*color11: #a6e22e
-*color12: #a1efe4
-*color13: #66d9ef
-*color14: #f92672
-*color15: #cc6633
+!black
+ URxvt.color0:  #333333
+ URxvt.color8:  #666666
+!red
+ URxvt.color1:  #A94952
+ URxvt.color9:  #ED6975
+!green
+ URxvt.color2:  #83A949
+ URxvt.color10: #B8ED69
+!yellow
+ URxvt.color3:  #A99F49
+ URxvt.color11: #EDE169
+!blue
+ URxvt.color4:  #4983A9
+ URxvt.color12: #69B8ED
+!magenta
+ URxvt.color5:  #A94983
+ URxvt.color13: #ED69B8
+!cyan
+ URxvt.color6:  #49A99F
+ URxvt.color14: #69EDE1
+!white
+ URxvt.color7:  #AAAAAA
+ URxvt.color15: #CCCCCC 
+
+! *color0:  #272822
+! *color1:  #383830
+! *color2:  #49483e
+! *color3:  #75715e
+! *color4:  #a59f85
+! *color5:  #f8f8f2
+! *color6:  #f5f4f1
+! *color7:  #f9f8f5
+! *color8:  #fd971f
+! *color9:  #f4bf75
+! *color10: #ae81ff
+! *color11: #a6e22e
+! *color12: #a1efe4
+! *color13: #66d9ef
+! *color14: #f92672
+! *color15: #cc6633
 
 !*color0:   #2E3436
 !*color1:   #a40000
