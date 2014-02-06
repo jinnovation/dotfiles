@@ -24,6 +24,9 @@
 
 (global-set-key (kbd "C-x p") (lambda () (interactive) (other-window -1)))
 
+(global-set-key (kbd "C-x a a") 'align)
+(global-set-key (kbd "C-x a r") 'align-regexp)
+
 (defun window-toggle-split-direction ()
   "Switch window split from horizontally to vertically, or vice versa.
 

@@ -3,12 +3,15 @@
   (progn
       (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
       (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/")
-      (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
+      (add-to-list 'custom-theme-load-path
+		   "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
 ;; (load-theme 'tango-2 t)
 (load-theme 'monokai t)
 
 (setq inhibit-startup-screen t)
+(setq inhibit-startup-message t)
+(setq initial-scratch-message "")
 
 (global-linum-mode 1)
 (setq linum-format 'dynamic)

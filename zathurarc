@@ -1,7 +1,7 @@
-unmap j
-unmap k
-unmap h
-unmap l
+#unmap j
+#unmap k
+#unmap h
+#unmap l
 
 unmap <C-d>
 unmap <C-u>
@@ -10,10 +10,10 @@ unmap <C-u>
 map [index] n index_navigate next
 map [index] e index_navigate previous
 
-map n scroll down
-map e scroll up
-map N scroll half-down
-map E scroll half-up
+#map n scroll down
+#map e scroll up
+#map N scroll half-down
+#map E scroll half-up
 
-map h scroll left
-map i scroll right
+#map h scroll left
+#map i scroll right
