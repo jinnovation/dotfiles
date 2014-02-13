@@ -8,6 +8,9 @@
 
 ;; (load-theme 'tango-2 t)
 (load-theme 'monokai t)
+(set-background-color "#121212")
+(set-face-background 'fringe "#111111")
+(set-face-background 'linum  "#111111")
 
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-message t)
@@ -94,8 +97,3 @@
 	    TeX-run-TeX nil (latex-mode doctex-mode) :help "Run LaTeX")))
 
 (setq c-block-comment-prefix "* ")
-
-(set-background-color "#121212")
-
-(set-face-background 'fringe "#111111")
-(set-face-background 'linum  "#111111")
