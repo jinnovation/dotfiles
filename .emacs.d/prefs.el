@@ -16,11 +16,17 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
 
-(global-linum-mode 1)
-(setq linum-format 'dynamic)
+(when (fboundp 'global-linum-mode)
+  (global-linum-mode 1)
+  (setq linum-format 'dynamic))
 
-(global-hl-line-mode 1)
-(column-number-mode 1)
+
+(when (fboundp 'global-hl-line-mode)
+  (global-hl-line-mode 1))
+
+(when (fboundp 'column-number-mode)
+  (column-number-mode 1))
+
 
 (show-paren-mode 1)
 (autopair-global-mode)
