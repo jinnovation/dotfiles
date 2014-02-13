@@ -125,7 +125,7 @@ export EDITOR=emacs
 
 PATH=$PATH:/home/jjin/.gem/ruby/2.0.0/bin
 PATH=$PATH:/opt/flex-sdk/bin
-PATH=$PATH:/usr/local/stata12/ # stata
+PATH=$PATH:/home/jjin/.local/bin
 export PATH
 
 man() {
