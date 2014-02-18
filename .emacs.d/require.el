@@ -4,3 +4,5 @@
 ;; (require 'autopair-latex)
 
 (require 'highlight-indentation)
+
+(require 'hyde)

@@ -1,3 +1,7 @@
+(global-set-key (kbd "<f1>") 'magit-status)
+(global-set-key (kbd "<f2>") 'shell)
+(global-set-key (kbd "<f12>") 'package-list-packages)
+
 (global-set-key (kbd "M-g") 'goto-line)
 
 (global-set-key (kbd "RET") 'reindent-then-newline-and-indent)
