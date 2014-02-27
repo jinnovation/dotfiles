@@ -6,7 +6,6 @@
       (add-to-list 'custom-theme-load-path
 		   "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
-;; (load-theme 'tango-2 t)
 (load-theme 'monokai t)
 (set-background-color "#121212")
 (set-face-background 'fringe "#111111")
@@ -15,6 +14,8 @@
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
+
+(setq scss-compile-at-save nil)
 
 (when (fboundp 'global-linum-mode)
   (global-linum-mode 1)
@@ -31,6 +32,7 @@
 (show-paren-mode 1)
 (autopair-global-mode)
 (delete-selection-mode +1)
+(global-auto-complete-mode)
 
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
@@ -38,6 +40,11 @@
 (if (fboundp 'line-number-mode) (line-number-mode -1))
 
 (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
+(add-hook 'c-mode-hook (lambda ()
+			 (add-to-list 'ac-sources 'ac-source-c-headers)
+			 (add-to-list 'ac-sources 'ac-source-c-header-symbols
+				      t)))
+
 ;; =============================================================================
 
 ;; highlights strings like TODO, FIXME, etc.
@@ -59,6 +66,8 @@
 
 (add-hook 'markdown-mode-hook 'auto-fill-mode)
 (add-hook 'markdown-mode-hook 'fic-ext-mode)
+
+(add-hook 'scss-mode-hook 'rainbow-mode)
 
 (setq next-line-add-newlines t)
 

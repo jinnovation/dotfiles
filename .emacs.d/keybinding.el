@@ -1,3 +1,10 @@
+;; buffer switching (browser-style tab switching)
+(global-unset-key (kbd "C-x o"))
+(global-set-key (kbd "C-<tab>") 'other-window)
+(global-set-key (kbd "\<C-S-iso-lefttab>") (lambda () (interactive) (other-window -1)))
+
+(global-set-key (kbd "C-x k") (lambda () (interactive) (kill-buffer (current-buffer))))
+
 (global-set-key (kbd "<f1>") 'magit-status)
 (global-set-key (kbd "<f2>") 'shell)
 (global-set-key (kbd "<f12>") 'package-list-packages)
@@ -26,8 +33,6 @@
 
 (global-set-key (kbd "C-<backspace>") 'undo)
 
-(global-set-key (kbd "C-x p") (lambda () (interactive) (other-window -1)))
-
 (global-set-key (kbd "C-x a a") 'align)
 (global-set-key (kbd "C-x a r") 'align-regexp)
 
@@ -46,8 +51,9 @@ i.e. change right window to bottom, or change bottom window to right."
                (next-win (windmove-find-other-window nextdir win))
                (neighbour1 (windmove-find-other-window neighbour-dir win))
                (neighbour2 (if next-win (with-selected-window next-win
-                                          (windmove-find-other-window neighbour-dir next-win)))))
-          ;;(message "win: %s\nnext-win: %s\nneighbour1: %s\nneighbour2:%s" win next-win neighbour1 neighbour2)
+                                          (windmove-find-other-window
+					   neighbour-dir next-win)))))
+
           (setq done (and (eq neighbour1 neighbour2)
                           (not (eq (minibuffer-window) next-win))))
           (if done
