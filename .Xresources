@@ -9,8 +9,7 @@
 
 ! Use the specified colour as the windows background colour [default White];
 URxvt*depth: 32
-URxvt*background: rgba:0000/0000/0000/5555
-
+URxvt*background: rgba:0000/0000/0000/0000
 ! Use the specified colour as the windows foreground colour [default Black];
 URxvt*foreground: #dddddd
 
@@ -68,7 +67,8 @@ URxvt*foreground: #dddddd
 ! URxvt*borderColor: colour
 
 ! Select the fonts to be used. This is a comma separated list of font names that
-URxvt*font: xft:Droid Sans Mono:size=8:antialias=true
+! URxvt*font: xft:Droid Sans Mono:size=8:antialias=true
+URxvt*font: xft:Terminus:size=10:antialias=true
 !-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
 
 ! URxvt*boldFont: fontlist
@@ -273,18 +273,20 @@ URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel, font-size
 !red
  URxvt.color1:  #A94952
  URxvt.color9:  #ED6975
-!green
- URxvt.color2:  #83A949
- URxvt.color10: #B8ED69
+
+!magenta
+ URxvt.color2:  #A94983
+ URxvt.color10: #ED69B8
 !yellow
  URxvt.color3:  #A99F49
  URxvt.color11: #EDE169
 !blue
  URxvt.color4:  #4983A9
  URxvt.color12: #69B8ED
-!magenta
- URxvt.color5:  #A94983
- URxvt.color13: #ED69B8
+
+!green
+ URxvt.color5:  #83A949
+ URxvt.color13: #B8ED69
 !cyan
  URxvt.color6:  #49A99F
  URxvt.color14: #69EDE1

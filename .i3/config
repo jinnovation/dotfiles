@@ -11,7 +11,7 @@ set $color3 #7d73ed
 set $color4 #4fdaef
 set $color5 #4d7de9
 
-set $term urxvt
+set $term urxvt -e tmux
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode

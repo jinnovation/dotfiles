@@ -1,3 +1,4 @@
+(global-auto-revert-mode)
 ;; PREFS BEGIN
 (when (>= emacs-major-version 24)
   (progn
@@ -6,10 +7,10 @@
       (add-to-list 'custom-theme-load-path
 		   "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
-(load-theme 'monokai t)
-(set-background-color "#121212")
-(set-face-background 'fringe "#111111")
-(set-face-background 'linum  "#111111")
+(load-theme 'spacegray t)
+;; (set-background-color "#121212")
+;; (set-face-background 'fringe "#111111")
+;; (set-face-background 'linum  "#111111")
 
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-message t)
@@ -17,9 +18,11 @@
 
 (setq scss-compile-at-save nil)
 
+
+
 (when (fboundp 'global-linum-mode)
-  (global-linum-mode 1)
-  (setq linum-format 'dynamic))
+  (setq linum-format 'dynamic)
+  (global-linum-mode 1))
 
 
 (when (fboundp 'global-hl-line-mode)
@@ -32,7 +35,7 @@
 (show-paren-mode 1)
 (autopair-global-mode)
 (delete-selection-mode +1)
-(global-auto-complete-mode)
+
 
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
@@ -40,6 +43,9 @@
 (if (fboundp 'line-number-mode) (line-number-mode -1))
 
 (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
+
+(global-auto-complete-mode)
+(require 'ac-c-headers)
 (add-hook 'c-mode-hook (lambda ()
 			 (add-to-list 'ac-sources 'ac-source-c-headers)
 			 (add-to-list 'ac-sources 'ac-source-c-header-symbols
@@ -89,12 +95,15 @@
   (set-frame-parameter (selected-frame) 'alpha value))
 (set-transparency 75)
 
-(setq font-face-main "Droid Sans Mono")
-(setq font-size-small "8")
-(setq font-size-bigger "11")
-
+(setq font-face-main "Terminus")
+(setq font-size-small "10")
+(setq font-size-bigger "15")
 (setq font-setting-bigger (format "%s-%s" font-face-main font-size-bigger))
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
+
+;; MODE LINE
+(set-face-attribute 'mode-line nil :font font-face-main)
+(set-face-attribute 'mode-line nil :height 100)
 
 (when (display-graphic-p nil)
   (cond ((> (x-display-pixel-height) (x-display-pixel-width))
