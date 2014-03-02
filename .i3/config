@@ -27,8 +27,8 @@ font -*-limey-*-*-*-*-10-*-*-*-*-*-*-*
 floating_modifier Mod4
 
 # start a terminal
-bindsym Mod4+Return exec $term
-bindsym Mod4+Shift+Return exec $term -e tmux
+bindsym Mod4+Return exec $term -e tmux
+bindsym Mod4+Shift+Return exec $term
 
 # kill focused window
 bindsym Mod4+Shift+q kill
