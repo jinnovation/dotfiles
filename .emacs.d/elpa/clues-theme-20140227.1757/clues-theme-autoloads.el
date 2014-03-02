@@ -3,16 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "clues-theme" "clues-theme.el" (21263 26516
-;;;;;;  303432 754000))
+;;;### (autoloads nil "clues-theme" "clues-theme.el" (21267 27033
+;;;;;;  130098 931000))
 ;;; Generated autoloads from clues-theme.el
 
 (when load-file-name (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
 
 ;;;***
 
-;;;### (autoloads nil nil ("clues-theme-pkg.el") (21263 26516 469068
-;;;;;;  686000))
+;;;### (autoloads nil nil ("clues-theme-pkg.el") (21267 27033 200386
+;;;;;;  450000))
 
 ;;;***
 

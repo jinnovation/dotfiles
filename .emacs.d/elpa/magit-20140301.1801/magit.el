@@ -1894,9 +1894,8 @@ server if necessary."
      ;; Tell Git to use the client.
      (setenv "GIT_EDITOR"
              (concat magit-emacsclient-executable
-     ;; Tell the client where the server is, if necessary.
+     ;; Tell the client where the server file is.
                      (and (not server-use-tcp)
-                          (not (equal server-name "server"))
                           (concat " --socket-name="
                                   (expand-file-name server-name
                                                     server-socket-dir)))))
@@ -3139,10 +3138,7 @@ Run Git in the root of the current repository.
 ;;;;; Process Mode
 
 (define-derived-mode magit-process-mode magit-mode "Magit Process"
-  "Mode for looking at git process output."
-  (view-mode 1)
-  (setq-local view-no-disable-on-exit t)
-  (setq view-exit-action #'bury-buffer))
+  "Mode for looking at git process output.")
 
 (defvar magit-process-buffer-name "*magit-process*"
   "Name of buffer where output of processes is put.")
