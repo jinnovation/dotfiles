@@ -1,5 +1,5 @@
 ;; buffer switching (browser-style tab switching)
-(global-unset-key (kbd "C-x o"))
+;; (global-unset-key (kbd "C-x o"))
 (global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "\<C-S-iso-lefttab>") (lambda () (interactive) (other-window -1)))
 

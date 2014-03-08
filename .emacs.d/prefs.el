@@ -18,6 +18,8 @@
 
 (setq scss-compile-at-save nil)
 
+(setq org-pretty-entities t)
+
 
 
 (when (fboundp 'global-linum-mode)
@@ -93,7 +95,7 @@
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value (0 - 100 opaque): ")
   (set-frame-parameter (selected-frame) 'alpha value))
-(set-transparency 75)
+(set-transparency 90)
 
 (setq font-face-main "Terminus")
 (setq font-size-small "10")
