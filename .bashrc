@@ -217,7 +217,9 @@ cyan_light='\033[1;36m'
 purple='\033[0;35m'
 purple_light='\033[1;35m'
 
-[[ "$PS1" ]] && echo -e "\033[0;36m$(/usr/bin/fortune -a)\033[0m"
-export EC2_HOST=ec2-184-72-133-21.compute-1.amazonaws.com
+[[ -f /usr/bin/fortune ]] && [[ "$PS1" ]] && echo -e "\033[0;36m$(/usr/bin/fortune -a)\033[0m"
 
-alias borjapls="ssh ubuntu@ec2-184-72-133-21.compute-1.amazonaws.com"
+if [ "$(uname -o)" == "Cygwin" ]; then
+   alias emacs="emacs-w32"
+   alias open="cygstart"
+fi
