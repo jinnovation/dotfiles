@@ -19,8 +19,7 @@
 (setq scss-compile-at-save nil)
 
 (setq org-pretty-entities t)
-
-
+(setq org-alphabetical-lists t)
 
 (when (fboundp 'global-linum-mode)
   (setq linum-format 'dynamic)
