@@ -1,3 +1,5 @@
+(setq-default indent-tabs-mode nil)
+
 (global-auto-revert-mode)
 ;; PREFS BEGIN
 (when (>= emacs-major-version 24)
@@ -19,8 +21,7 @@
 (setq scss-compile-at-save nil)
 
 (setq org-pretty-entities t)
-
-
+(setq org-src-fontify-natively t)
 
 (when (fboundp 'global-linum-mode)
   (setq linum-format 'dynamic)
@@ -95,7 +96,7 @@
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value (0 - 100 opaque): ")
   (set-frame-parameter (selected-frame) 'alpha value))
-(set-transparency 90)
+(set-transparency 80)
 
 (setq font-face-main "Terminus")
 (setq font-size-small "10")
@@ -104,10 +105,9 @@
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
 ;; MODE LINE
-(set-face-attribute 'mode-line nil :font font-face-main)
-(set-face-attribute 'mode-line nil :height 100)
-
 (when (display-graphic-p nil)
+  (set-face-attribute 'mode-line nil :font font-face-main)
+  (set-face-attribute 'mode-line nil :height 100)
   (cond ((> (x-display-pixel-height) (x-display-pixel-width))
 	 (if (> (x-display-pixel-width) 1920)
 	     (set-face-attribute 'default nil :font font-setting-bigger)

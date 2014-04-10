@@ -90,5 +90,8 @@
 
 (add-to-list 'auto-mode-alist '("rc$" . conf-mode))
 
+(add-to-list 'auto-mode-alist '("fsh$" . glsl-mode))
+(add-to-list 'auto-mode-alist '("vsh$" . glsl-mode))
+
 ;; (load "/home/jjin/.emacs.d/nxhtml/autostart.el")
 ;; (setq mumamo-background-colors nil)

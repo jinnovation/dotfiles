@@ -186,6 +186,7 @@ alias gitk='gitk --all'
 alias fortune='fortune -a'
 
 alias open='xdg-open'
+alias grep='grep --color=always'
 
 export EDITOR=emacs
 
@@ -194,6 +195,8 @@ export EDITOR=emacs
 PATH=$PATH:/home/jjin/.gem/ruby/2.0.0/bin
 PATH=$PATH:/opt/flex-sdk/bin
 PATH=$PATH:/home/jjin/.local/bin
+PATH=$PATH:/home/jjin/bin/
+PATH=$PATH:/usr/local/stata12
 export PATH
 
 man() {
