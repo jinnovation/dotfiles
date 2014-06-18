@@ -222,7 +222,7 @@ purple_light='\033[1;35m'
 
 [[ -f /usr/bin/fortune ]] && [[ "$PS1" ]] && echo -e "\033[0;36m$(/usr/bin/fortune -a)\033[0m"
 
-if [ "$(uname -o)" == "Cygwin" ]; then
+if [ "$(uname -s)" == "Cygwin" ]; then
    alias emacs="emacs-w32"
    alias open="cygstart"
 fi
