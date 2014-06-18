@@ -226,3 +226,8 @@ if [ "$(uname -o)" == "Cygwin" ]; then
    alias emacs="emacs-w32"
    alias open="cygstart"
 fi
+
+if [ "$(uname -s)" == "Darwin" ]; then
+    PATH=$PATH:$HOME/.rvm/bin
+    export PATH
+fi
