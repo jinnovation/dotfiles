@@ -179,14 +179,15 @@ unset safe_term match_lhs
 # See also: https://wiki.archlinux.org/index.php/Bash#The_.22command_not_found.22_hook
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
-alias ls='ls --color=auto'
-alias pacman='sudo pacman'
-alias chrome='google-chrome'
-alias gitk='gitk --all'
-alias fortune='fortune -a'
-
-alias open='xdg-open'
-alias grep='grep --color=always'
+if [ "$(uname -s)" == "Linux" ]; then
+   alias ls='ls --color=auto'
+   alias pacman='sudo pacman'
+   alias chrome='google-chrome'
+   alias gitk='gitk --all'
+   alias fortune='fortune -a'
+   alias open='xdg-open'
+   alias grep='grep --color=always' 
+fi
 
 export EDITOR=emacs
 
@@ -228,6 +229,8 @@ if [ "$(uname -s)" == "Cygwin" ]; then
 fi
 
 if [ "$(uname -s)" == "Darwin" ]; then
+   alias ls='ls -G'
+
     PATH=$PATH:$HOME/.rvm/bin
     export PATH
 fi
