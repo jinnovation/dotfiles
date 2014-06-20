@@ -1,9 +1,12 @@
 [user]
 	name = Jonathan Jin
-	email = jjin082693@gmail.com
+	email = jjin@enova.com
 [core]
 	editor = nano
 	autocrlf = input
+	whitespace = trailing-space,space-before-tab
+[color]
+	ui = auto
 [alias]
 	unstage = reset HEAD --
 	last = log -1 HEAD
@@ -13,3 +16,5 @@
 	lgo = log --graph --color --all --decorate --oneline
 [color]
 	ui = true
+[push]
+	default = current
