@@ -229,8 +229,15 @@ if [ "$(uname -s)" == "Cygwin" ]; then
 fi
 
 if [ "$(uname -s)" == "Darwin" ]; then
-   alias ls='ls -G'
+alias ls='ls -G'
+alias evm='VBoxManage startvm "Enova Debian"'
+alias esh='ssh jjin@192.168.56.10'
 
-    PATH=$PATH:$HOME/.rvm/bin
-    export PATH
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad-
+
+   PATH=$PATH:$HOME/.rvm/bin
+   export PATH
+
 fi
