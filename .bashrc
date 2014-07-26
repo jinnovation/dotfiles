@@ -232,6 +232,8 @@ if [ "$(uname -s)" == "Darwin" ]; then
 alias ls='ls -G'
 alias evm='VBoxManage startvm "Enova Debian"'
 alias esh='ssh jjin@192.168.56.10'
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgkill='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
@@ -241,3 +243,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad-
    export PATH
 
 fi
+
+alias be='bundle exec'
+alias gs='git status'
