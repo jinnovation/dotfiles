@@ -1,9 +1,30 @@
+(require 'powerline)
+(powerline-center-evil-theme)
+(eval-after-load 'evil
+    '(progn
+       (define-key evil-normal-state-map ",ci" 'evilnc-comment-or-uncomment-lines)
+       (define-key evil-normal-state-map ",cl" 'evilnc-quick-comment-or-uncomment-to-the-line)
+       (define-key evil-normal-state-map ",ll" 'evilnc-quick-comment-or-uncomment-to-the-line)
+       (define-key evil-normal-state-map ",cc" 'evilnc-copy-and-comment-lines)
+       (define-key evil-normal-state-map ",cp" 'evilnc-comment-or-uncomment-paragraphs)
+       (define-key evil-normal-state-map ",cr" 'comment-or-uncomment-region)
+       (define-key evil-normal-state-map ",cv" 'evilnc-toggle-invert-comment-line-by-line)))
+
+(evil-mode 1)
+(global-evil-surround-mode 1)
+
+(setq evil-esc-delay 0)
+(setq projectile-completion-system 'grizzl)
+(setq projectile-enable-caching t)
+(projectile-global-mode)
+(setq paradox-github-token "50d7f7fe0af07638a09e1a32f4ec5bba3f83f74e")
+
 (setq-default indent-tabs-mode nil)
 
-(setq-default tab-width 4)
+(setq-default tab-width 2)
+(defvaralias 'js-indent-level 'tab-width)
 
 (global-auto-revert-mode)
-;; PREFS BEGIN
 (when (>= emacs-major-version 24)
   (progn
       (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -11,10 +32,8 @@
       (add-to-list 'custom-theme-load-path
 		   "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
-(load-theme 'spacegray t)
-;; (set-background-color "#121212")
-;; (set-face-background 'fringe "#111111")
-;; (set-face-background 'linum  "#111111")
+;; (load-theme 'spacegray t)
+(load-theme 'brin t)
 
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-message t)
@@ -23,15 +42,12 @@
 (setq scss-compile-at-save nil)
 
 (setq org-pretty-entities t)
-
 (setq org-src-fontify-natively t)
-
 (setq org-alphabetical-lists t)
 
 (when (fboundp 'global-linum-mode)
   (setq linum-format 'dynamic)
   (global-linum-mode 1))
-
 
 (when (fboundp 'global-hl-line-mode)
   (global-hl-line-mode 1))
@@ -39,11 +55,9 @@
 (when (fboundp 'column-number-mode)
   (column-number-mode 1))
 
-
 (show-paren-mode 1)
 (autopair-global-mode)
 (delete-selection-mode +1)
-
 
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
@@ -51,14 +65,6 @@
 (if (fboundp 'line-number-mode) (line-number-mode -1))
 
 (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
-
-(global-auto-complete-mode)
-(require 'ac-c-headers)
-(add-hook 'c-mode-hook (lambda ()
-			 (add-to-list 'ac-sources 'ac-source-c-headers)
-			 (add-to-list 'ac-sources 'ac-source-c-header-symbols
-				      t)))
-
 ;; =============================================================================
 
 ;; highlights strings like TODO, FIXME, etc.
@@ -110,17 +116,21 @@
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
 ;; MODE LINE
-(when (display-graphic-p nil)
-  (set-face-attribute 'mode-line nil :font font-face-main)
-  (set-face-attribute 'mode-line nil :height 100)
-  (cond ((> (x-display-pixel-height) (x-display-pixel-width))
-	 (if (> (x-display-pixel-width) 1920)
-	     (set-face-attribute 'default nil :font font-setting-bigger)
-	   (set-face-attribute 'default nil :font font-setting-small)))
-	((> (x-display-pixel-width) (x-display-pixel-height))
-	 (if (> (x-display-pixel-height) 1080)
-	     (set-face-attribute 'default nil :font font-setting-bigger)
-	   (set-face-attribute 'default nil :font font-setting-small)))))
+(defun scale-text (cutoff-w cutoff-h)
+  (interactive "nCutoff width: \nnCutoff height: ")
+  (when (display-graphic-p nil)
+    (set-face-attribute 'mode-line nil :font font-face-main)
+    (set-face-attribute 'mode-line nil :height 100) ; FIXME: scale this too
+    (cond ((> (x-display-pixel-height) (x-display-pixel-width))
+           (if (> (x-display-pixel-width) cutoff-w)
+               (set-face-attribute 'default nil :font font-setting-bigger)
+             (set-face-attribute 'default nil :font font-setting-small)))
+          ((> (x-display-pixel-width) (x-display-pixel-height))
+           (if (> (x-display-pixel-height) cutoff-h)
+               (set-face-attribute 'default nil :font font-setting-bigger)
+             (set-face-attribute 'default nil :font font-setting-small))))))
+
+(scale-text 1920 1080)
 
 (eval-after-load "tex" 
   '(setcdr (assoc "LaTeX" TeX-command-list)
