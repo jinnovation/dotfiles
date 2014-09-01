@@ -1,1 +1,1 @@
-("~/dotfiles/" "~/enova/pentaho/pentavis/")
+("~/dotfiles/" "~/proj/uchicrushes-redux/" "~/proj/uchicago-crushes-analytics/" "~/enova/pentaho/pentavis/" "~/enova/lunchroulette/" "~/enova/final-presentation/" "~/Dropbox/UCHICAGO3/CMSC/238gamecon/projIndiv/" "/usr/local/" "~/enova/8b/apps/portfolio/" "~/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.1/")

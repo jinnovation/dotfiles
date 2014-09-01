@@ -1,3 +1,5 @@
+(require 'powerline)
+(powerline-center-evil-theme)
 (eval-after-load 'evil
     '(progn
        (define-key evil-normal-state-map ",ci" 'evilnc-comment-or-uncomment-lines)
@@ -9,6 +11,7 @@
        (define-key evil-normal-state-map ",cv" 'evilnc-toggle-invert-comment-line-by-line)))
 
 (evil-mode 1)
+(global-evil-surround-mode 1)
 
 (setq evil-esc-delay 0)
 (setq projectile-completion-system 'grizzl)
@@ -18,7 +21,8 @@
 
 (setq-default indent-tabs-mode nil)
 
-(setq-default tab-width 4)
+(setq-default tab-width 2)
+(defvaralias 'js-indent-level 'tab-width)
 
 (global-auto-revert-mode)
 (when (>= emacs-major-version 24)
@@ -61,7 +65,6 @@
 (if (fboundp 'line-number-mode) (line-number-mode -1))
 
 (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
-
 ;; =============================================================================
 
 ;; highlights strings like TODO, FIXME, etc.
@@ -113,17 +116,21 @@
 (setq font-setting-small (format "%s-%s" font-face-main font-size-small))
 
 ;; MODE LINE
-(when (display-graphic-p nil)
-  (set-face-attribute 'mode-line nil :font font-face-main)
-  (set-face-attribute 'mode-line nil :height 100)
-  (cond ((> (x-display-pixel-height) (x-display-pixel-width))
-	 (if (> (x-display-pixel-width) 1920)
-	     (set-face-attribute 'default nil :font font-setting-bigger)
-	   (set-face-attribute 'default nil :font font-setting-small)))
-	((> (x-display-pixel-width) (x-display-pixel-height))
-	 (if (> (x-display-pixel-height) 1080)
-	     (set-face-attribute 'default nil :font font-setting-bigger)
-	   (set-face-attribute 'default nil :font font-setting-small)))))
+(defun scale-text (cutoff-w cutoff-h)
+  (interactive "nCutoff width: \nnCutoff height: ")
+  (when (display-graphic-p nil)
+    (set-face-attribute 'mode-line nil :font font-face-main)
+    (set-face-attribute 'mode-line nil :height 100) ; FIXME: scale this too
+    (cond ((> (x-display-pixel-height) (x-display-pixel-width))
+           (if (> (x-display-pixel-width) cutoff-w)
+               (set-face-attribute 'default nil :font font-setting-bigger)
+             (set-face-attribute 'default nil :font font-setting-small)))
+          ((> (x-display-pixel-width) (x-display-pixel-height))
+           (if (> (x-display-pixel-height) cutoff-h)
+               (set-face-attribute 'default nil :font font-setting-bigger)
+             (set-face-attribute 'default nil :font font-setting-small))))))
+
+(scale-text 1920 1080)
 
 (eval-after-load "tex" 
   '(setcdr (assoc "LaTeX" TeX-command-list)

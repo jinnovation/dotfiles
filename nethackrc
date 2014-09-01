@@ -1,0 +1,6 @@
+OPTIONS=color, hilite_pet
+OPTIONS=name:Jonathan
+
+OPTIONS=boulder:0
+
+OPTIONS=pickup_types:?!/$=)
