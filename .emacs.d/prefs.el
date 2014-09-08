@@ -45,6 +45,17 @@
 (setq org-src-fontify-natively t)
 (setq org-alphabetical-lists t)
 
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "|" "DONE(d)")
+        (sequence "TO-APPLY(a)" "APPLIED(A)" "|" "NONE(n)" "REJECTED(r)" "OFFERED(O)")))
+
+(setq org-todo-keyword-faces
+      '(("TO-APPLY" . org-warning)
+        ("APPLIED" . "yellow")
+        ("NONE" . "red")
+        ("REJECTED" . "red")
+        ("OFFERED" . "green")))
+
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome-beta")
 
