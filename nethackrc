@@ -1,6 +1,20 @@
-OPTIONS=color, hilite_pet
+OPTIONS=color,menucolors
 OPTIONS=name:Jonathan
 
 OPTIONS=boulder:0
 
 OPTIONS=pickup_types:?!/$=)
+
+OPTIONS=menu_headings:bold
+
+OPTIONS=!legacy
+
+MENUCOLOR="uncursed"=green
+MENUCOLOR="blessed"=cyan&bold
+MENUCOLOR="cursed"=orange&bold
+
+MENUCOLOR="loadstone\|wand \(of\|called\) cancellation"=underline
+MENUCOLOR="Amulet of Yendor named"=magenta                           # color only the real Amulet
+MENUCOLOR="gold piece"=yellow
+
+MENUCOLOR="[a-zA-Z] - [a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta  # forgotten spell

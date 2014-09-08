@@ -11,7 +11,7 @@
 URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0000/0000
 ! Use the specified colour as the windows foreground colour [default Black];
-URxvt*foreground: #dddddd
+URxvt*foreground: #B2B2B2
 
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-
 ! URxvt*colorn: colour
@@ -37,7 +37,7 @@ URxvt*foreground: #dddddd
 ! URxvt*cursorColor: colour
 
 ! Use the specified colour for the colour of the cursor text. For this to take
-! URxvt*cursorColor2: colour
+URxvt*cursorColor2: #000000
 
 ! True: simulate reverse video by foreground and background colours; option -rv.
 ! URxvt*reverseVideo: boolean
@@ -163,6 +163,7 @@ URxvt*font: xft:Terminus:size=10:antialias=true
 
 ! True: blink the cursor. False: do not blink the cursor [default]; option -bc.
 ! URxvt*cursorBlink: boolean
+URxvt*cursorBlink: true
 
 ! True: Make the cursor underlined. False: Make the cursor a box [default]; option
 ! URxvt*cursorUnderline: boolean
@@ -249,7 +250,7 @@ URxvt*font: xft:Terminus:size=10:antialias=true
 ! URxvt*searchable-scrollback: keysym
 
 ! Specifies the program to be started with a URL argument. Used by the
-URxvt*url-launcher: chromium
+URxvt*url-launcher: google-chrome-beta
 
 ! Compile frills: Sets the WM_TRANSIENT_FOR property to the given window id.
 ! URxvt*transient-for: windowid
@@ -267,7 +268,7 @@ URxvt*url-launcher: chromium
 ! font-size: allows change font size on fly
 URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel, font-size
 
-!black
+! black
  URxvt.color0:  #333333
  URxvt.color8:  #666666
 !red
@@ -293,40 +294,6 @@ URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel, font-size
 !white
  URxvt.color7:  #AAAAAA
  URxvt.color15: #CCCCCC 
-
-! *color0:  #272822
-! *color1:  #383830
-! *color2:  #49483e
-! *color3:  #75715e
-! *color4:  #a59f85
-! *color5:  #f8f8f2
-! *color6:  #f5f4f1
-! *color7:  #f9f8f5
-! *color8:  #fd971f
-! *color9:  #f4bf75
-! *color10: #ae81ff
-! *color11: #a6e22e
-! *color12: #a1efe4
-! *color13: #66d9ef
-! *color14: #f92672
-! *color15: #cc6633
-
-!*color0:   #2E3436
-!*color1:   #a40000
-!*color2:   #4E9A06
-!*color3:   #C4A000
-!*color4:   #3465A4
-!*color5:   #75507B
-!*color6:   #ce5c00
-!*color7:   #babdb9
-!*color8:   #555753
-!*color9:   #EF2929
-!*color10:  #8AE234
-!*color11:  #FCE94F
-!*color12:  #729FCF
-!*color13:  #AD7FA8
-!*color14:  #fcaf3e
-!*color15:  #EEEEEC
 
  URxvt*keysym.C-Up:     perl:font-size:increase
  URxvt*keysym.C-Down:   perl:font-size:decrease

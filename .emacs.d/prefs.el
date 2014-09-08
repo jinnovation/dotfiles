@@ -45,6 +45,9 @@
 (setq org-src-fontify-natively t)
 (setq org-alphabetical-lists t)
 
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "google-chrome-beta")
+
 (when (fboundp 'global-linum-mode)
   (setq linum-format 'dynamic)
   (global-linum-mode 1))

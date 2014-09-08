@@ -247,6 +247,5 @@ fi
 alias be='bundle exec'
 alias bi='bundle install'
 alias gs='git status'
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-[ -d "/Users/jjin/enova/8b/bin" ] && export PATH="/Users/jjin/enova/8b/bin:$PATH"
+source /usr/share/chruby/chruby.sh
+eval "$(rbenv init -)"

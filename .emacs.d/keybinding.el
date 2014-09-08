@@ -1,11 +1,3 @@
-;; (global-set-key (kbd "C-x C-f")
-;;                 (lambda ()
-;;                   (interactive)
-;;                   (if (projectile-project-p)
-;;                       'projectile-find-file
-;;                     'find-file)))
-;; buffer switching (browser-style tab switching)
-;; (global-unset-key (kbd "C-x o"))
 (global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "\<C-S-iso-lefttab>") (lambda () (interactive) (other-window -1)))
 
@@ -13,6 +5,7 @@
 
 (global-set-key (kbd "<f1>") 'magit-status)
 (global-set-key (kbd "<f2>") 'shell)
+(global-set-key (kbd "<f11>") 'org-agenda)
 (global-set-key (kbd "<f12>") 'paradox-list-packages)
 
 (global-set-key (kbd "M-g") 'goto-line)
