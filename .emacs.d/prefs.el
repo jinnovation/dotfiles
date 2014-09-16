@@ -1,19 +1,6 @@
 (require 'powerline)
 (powerline-center-evil-theme)
-(eval-after-load 'evil
-    '(progn
-       (define-key evil-normal-state-map ",ci" 'evilnc-comment-or-uncomment-lines)
-       (define-key evil-normal-state-map ",cl" 'evilnc-quick-comment-or-uncomment-to-the-line)
-       (define-key evil-normal-state-map ",ll" 'evilnc-quick-comment-or-uncomment-to-the-line)
-       (define-key evil-normal-state-map ",cc" 'evilnc-copy-and-comment-lines)
-       (define-key evil-normal-state-map ",cp" 'evilnc-comment-or-uncomment-paragraphs)
-       (define-key evil-normal-state-map ",cr" 'comment-or-uncomment-region)
-       (define-key evil-normal-state-map ",cv" 'evilnc-toggle-invert-comment-line-by-line)))
 
-(evil-mode 1)
-(global-evil-surround-mode 1)
-
-(setq evil-esc-delay 0)
 (setq projectile-completion-system 'grizzl)
 (setq projectile-enable-caching t)
 (projectile-global-mode)
@@ -35,26 +22,7 @@
 ;; (load-theme 'spacegray t)
 (load-theme 'brin t)
 
-(setq inhibit-startup-screen t)
-(setq inhibit-startup-message t)
-(setq initial-scratch-message "")
-
 (setq scss-compile-at-save nil)
-
-(setq org-pretty-entities t)
-(setq org-src-fontify-natively t)
-(setq org-alphabetical-lists t)
-
-(setq org-todo-keywords
-      '((sequence "TODO(t)" "|" "DONE(d)")
-        (sequence "TO-APPLY(a)" "APPLIED(A)" "|" "NONE(n)" "REJECTED(r)" "OFFERED(O)")))
-
-(setq org-todo-keyword-faces
-      '(("TO-APPLY" . org-warning)
-        ("APPLIED" . "yellow")
-        ("NONE" . "red")
-        ("REJECTED" . "red")
-        ("OFFERED" . "green")))
 
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome-beta")

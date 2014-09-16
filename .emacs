@@ -1,12 +1,13 @@
 ; TODO: account for CLI mode in settings (highline etc)
 (defconst user-init-dir "~/.emacs.d/")
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
+(add-to-list 'load-path (expand-file-name user-init-dir))
 
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
-(package-initialize)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(package-initialize)
+
 (defun load-user-file (file)
   (interactive "f")
   "Load a file in current user's configuration directory"
@@ -15,6 +16,10 @@
 (load-user-file "require.el")
 (load-user-file "keybinding.el")
 (load-user-file "prefs.el")
+
+(load-user-file "prefs/org.el")
+(load-user-file "prefs/evil.el")
+(load-user-file "prefs/defaults.el")
 
 (require 'haxe-mode)
 
