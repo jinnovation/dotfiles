@@ -249,3 +249,9 @@ alias bi='bundle install'
 alias gs='git status'
 source /usr/share/chruby/chruby.sh
 eval "$(rbenv init -)"
+
+PATH="/home/jjin/perl5/bin${PATH+:}${PATH}"; export PATH;
+PERL5LIB="/home/jjin/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/jjin/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/jjin/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/jjin/perl5"; export PERL_MM_OPT;

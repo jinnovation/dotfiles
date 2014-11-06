@@ -1,1 +1,1 @@
-("~/dotfiles/" "~/proj/uchicrushes-redux/" "~/proj/uchicago-crushes-analytics/" "~/enova/pentaho/pentavis/" "~/enova/lunchroulette/" "~/enova/final-presentation/" "~/Dropbox/UCHICAGO3/CMSC/238gamecon/projIndiv/" "/usr/local/" "~/enova/8b/apps/portfolio/" "~/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.1/")
+("~/dotfiles/" "~/2014-cs151-staff/" "~/algos/" "~/Dropbox/UCHICAGO4/knowledgeLab/d3tree/" "~/Dropbox/UCHICAGO2/CMSC/15200/jjin082693-cs152-win-13/" "~/Dropbox/UCHICAGO4/recruitment/buzzfeed/perl/" "~/Dropbox/UCHICAGO4/knowledgeLab/tree/")

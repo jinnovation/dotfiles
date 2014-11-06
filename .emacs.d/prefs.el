@@ -1,7 +1,4 @@
-(require 'powerline)
-(powerline-center-evil-theme)
-
-(setq projectile-completion-system 'grizzl)
+;; (setq projectile-completion-system 'grizzl)
 (setq projectile-enable-caching t)
 (projectile-global-mode)
 (setq paradox-github-token "50d7f7fe0af07638a09e1a32f4ec5bba3f83f74e")
@@ -19,8 +16,7 @@
       (add-to-list 'custom-theme-load-path
 		   "~/.emacs.d/elpa/highlight-indentation-0.5.0/")))
 
-;; (load-theme 'spacegray t)
-(load-theme 'brin t)
+(load-theme 'gotham t)
 
 (setq scss-compile-at-save nil)
 
@@ -47,7 +43,6 @@
 (if (fboundp 'line-number-mode) (line-number-mode -1))
 
 (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
-;; =============================================================================
 
 ;; highlights strings like TODO, FIXME, etc.
 (add-hook 'prog-mode-hook 'fic-ext-mode)
