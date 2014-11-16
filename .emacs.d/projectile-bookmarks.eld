@@ -1,1 +1,0 @@
-("~/dotfiles/" "~/2014-cs151-staff/" "~/algos/" "~/Dropbox/UCHICAGO4/knowledgeLab/d3tree/" "~/Dropbox/UCHICAGO2/CMSC/15200/jjin082693-cs152-win-13/" "~/Dropbox/UCHICAGO4/recruitment/buzzfeed/perl/" "~/Dropbox/UCHICAGO4/knowledgeLab/tree/")
