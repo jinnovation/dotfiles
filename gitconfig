@@ -2,7 +2,7 @@
 	name = Jonathan Jin
 	email = jjin082693@gmail.com
 [core]
-	editor = nano
+	editor = vim
 	autocrlf = input
 	whitespace = trailing-space,space-before-tab
 	excludesfile = ~/.gitignore_global
