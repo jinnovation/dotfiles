@@ -2,12 +2,22 @@ if filereadable(expand("~/.vim/plug.vim"))
   source ~/.vim/plug.vim
 endif
 
+if filereadable(expand("~/.vim/fn.vim"))
+  source ~/.vim/fn.vim
+endif
+
 let mapleader = ","
 let maplocalleader = "\\"
 
+set scrolloff=3
+
 set number
+
 set incsearch
 set hlsearch
+set showmatch
+set ignorecase
+set smartcase
 
 set splitbelow
 set splitright
@@ -27,6 +37,8 @@ set autochdir
 
 set visualbell
 
+set ai
+
 syntax on
 nmap <S-Enter> O<esc>j
 nmap <CR> o<Esc>k
@@ -36,18 +48,13 @@ nmap <C-S-Tab> <C-w>W
 map <C-n> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
 
-function! BKill()
-  let bnum = len(filter(range(1, bufnr('$')), 'buflisted(v:val)'))
-  if bnum==1
-    bd
-  else
-    bp
-    bd #
-  endif
-endfunction
+imap <C-f> <C-o>l
+imap <C-b> <C-o>h
+
 map <Leader>bk :call BKill()<CR>
 
 map <Leader>bn :bn<CR>
+map <Leader>bd :bd<CR>
 
 let g:NERDTreeWinSize=40
 let g:ctrlp_cmd = 'CtrlPMRU'
@@ -57,6 +64,7 @@ if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
 
-filetype plugin on
+filetype plugin indent on
 
 set statusline+=%{fugitive#statusline()}
+
