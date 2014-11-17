@@ -7,4 +7,3 @@ function! BKill()
     bd #
   endif
 endfunction
-
