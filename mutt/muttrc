@@ -1,0 +1,37 @@
+source "gpg2 -dq $HOME/.my-pwds.gpg |"
+
+set envelope_from=yes
+set from="Jonathan Jin <jjin082693@gmail.com>"
+
+set use_from=yes
+set edit_headers=yes
+
+set folder="imaps://imap.gmail.com:993"
+set imap_user="jjin082693@gmail.com"
+set imap_pass= $my_mutt_pw
+set spoolfile = "+INBOX"
+mailboxes = +INBOX
+
+set record = +Sent
+unset record
+
+set my_user = jjin082693
+
+set realname = "Jonathan Jin"
+set from = jjin082693@gmail.com
+set use_from = yes
+
+set smtp_url="smtp://jjin082693@smtp.gmail.com:587/"
+set smtp_pass = $my_mutt_pw
+set ssl_force_tls = yes
+set ssl_starttls = yes
+
+set postponed = +[Gmail]/Drafts
+
+unset imap_passive
+
+set imap_keepalive = 300
+set mail_check = 120
+
+set header_cache = $HOME/.cache/mutt
+set message_cachedir="$HOME/.cache/mutt"

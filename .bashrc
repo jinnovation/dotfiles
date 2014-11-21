@@ -189,7 +189,7 @@ if [ "$(uname -s)" == "Linux" ]; then
    alias grep='grep --color=always' 
 fi
 
-export EDITOR=emacs
+export EDITOR=vim
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 

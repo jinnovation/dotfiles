@@ -11,23 +11,25 @@ let maplocalleader = "\\"
 
 set scrolloff=3
 
-set number
-
+" search
 set incsearch
 set hlsearch
 set showmatch
 set ignorecase
 set smartcase
 
+" interface
 set splitbelow
 set splitright
+set colorcolumn=80
+set number
+
+" editing
 set expandtab
 set autoindent
 set smartindent
 set cindent
 set shiftwidth=2
-
-set colorcolumn=80
 
 set cursorline
 

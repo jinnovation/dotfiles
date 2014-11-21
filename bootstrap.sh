@@ -13,3 +13,6 @@ ln -s $DOTDIR/vim/plug.vim $HOMEDIR/.vim/plug.vim
 
 ln -s $DOTDIR/.Xresources $HOMEDIR/.Xresources
 ln -s $DOTDIR/tmux.conf $HOMEDIR/tmux.conf
+
+ln -s $DOTDIR/mutt/muttrc $HOMEDIR/.muttrc
+ln -s $DOTDIR/mutt/signature $HOMEDIR/.signature
