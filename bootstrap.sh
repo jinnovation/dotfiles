@@ -16,3 +16,5 @@ ln -s $DOTDIR/tmux.conf $HOMEDIR/tmux.conf
 
 ln -s $DOTDIR/mutt/muttrc $HOMEDIR/.muttrc
 ln -s $DOTDIR/mutt/signature $HOMEDIR/.signature
+
+ln -s $DOTDIR/bashrc $HOMEDIR/.bashrc
