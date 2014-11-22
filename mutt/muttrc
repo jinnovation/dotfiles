@@ -39,8 +39,18 @@ set message_cachedir="$HOME/.cache/mutt"
 set sidebar_visible = yes
 set sidebar_width = 40
 
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
 set sort = reverse-threads
 set sort_aux = last-date-received
+
+macro index \' "<tag-pattern>~R !~D !~F<enter>\
+<tag-prefix><save-message>+[Gmail]/All <enter>" \
+"Archive"
 
 # -*-muttrc-*-
 
