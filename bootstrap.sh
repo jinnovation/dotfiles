@@ -25,7 +25,7 @@ link_pairs=(
         $DOTDIR/gitignore_global .gitignore_global
 )
 
-for (( i = 0 ; i < ${#link_pairs[@]} ; i++)) do
+for (( i = 0 ; i < ${#link_pairs[@]} ; i+=2)) do
   if [ -e $HOMEDIR/${link_pairs[$i+1]} ]
   then
     echo "Moving old ${link_pairs[$i+1]} to ${link_pairs[$i+1]}.old"
