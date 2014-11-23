@@ -22,4 +22,6 @@ Plug 'vim-scripts/utl.vim'
 Plug 'vim-scripts/SyntaxRange'
 Plug 'LaTeX-Box-Team/LaTeX-Box'
 
+Plug 'godlygeek/tabular'
+
 call plug#end()
