@@ -4,17 +4,26 @@ DOTDIR=$HOMEDIR/dotfiles
 VIMRC=vimrc
 GVIMRC=gvimrc
 
-ln -s $DOTDIR/$VIMRC $HOMEDIR/.vimrc
-ln -s $DOTDIR/$GVIMRC $HOMEDIR/.gvimrc
-
 mkdir $HOMEDIR/.vim
-ln -s $DOTDIR/vim/fn.vim $HOMEDIR/.vim/fn.vim
-ln -s $DOTDIR/vim/plug.vim $HOMEDIR/.vim/plug.vim
 
-ln -s $DOTDIR/.Xresources $HOMEDIR/.Xresources
-ln -s $DOTDIR/tmux.conf $HOMEDIR/tmux.conf
+link_pairs = (
+        "$DOTDIR/vimrc", ".vimrc",
+        "$DOTDIR/gvimrc", ".gvimrc",
+        "$DOTDIR/vim/fn.vim", ".vim/fn.vim",
+        "$DOTDIR/vim/plug.vim", ".vim/plug.vim",
+        "$DOTDIR/.Xresources", ".Xresources",
+        "$DOTDIR/tmux.conf", ".conf",
+        "$DOTDIR/mutt/muttrc", ".muttrc",
+        "$DOTDIR/mutt/signature", ".signature"
+        "$DOTDIR/bashrc", ".bashrc"
+)
 
-ln -s $DOTDIR/mutt/muttrc $HOMEDIR/.muttrc
-ln -s $DOTDIR/mutt/signature $HOMEDIR/.signature
+for (( i = 0 ; i < ${#link_pairs[@]} ; i++)) do
+  if [ -e $HOMEDIR/${link_pairs[$i+1]} ]
+  then
+    echo "Moving old ${link_pairs[$i+1]} to ${link_pairs[$i+1]}.old"
+    mv ${link_pairs[$i+1]} ${link_pairs[$i+1]}.old
+  fi
 
-ln -s $DOTDIR/bashrc $HOMEDIR/.bashrc
+  ln -s ${link_pairs[$i]} $HOMEDIR/${link_pairs[$i+1]}
+done
