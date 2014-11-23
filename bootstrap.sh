@@ -7,7 +7,7 @@ GVIMRC=gvimrc
 if [ -e $HOMEDIR/.vim ]
 then
   echo "Moving old .vim/ to .vim.old/"
-  mv $HOMEDIR/.vim $HOMEDIR/.vim.old
+  mv $HOMEDIR/.vim/ $HOMEDIR/.vim.old
 fi
 mkdir $HOMEDIR/.vim
 
@@ -17,7 +17,7 @@ link_pairs=(
         $DOTDIR/vim/fn.vim .vim/fn.vim
         $DOTDIR/vim/plug.vim .vim/plug.vim
         $DOTDIR/.Xresources .Xresources
-        $DOTDIR/tmux.conf .conf
+        $DOTDIR/tmux.conf tmux.conf
         $DOTDIR/mutt/muttrc .muttrc
         $DOTDIR/mutt/signature .signature
         $DOTDIR/bashrc .bashrc
