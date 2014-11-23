@@ -14,8 +14,10 @@ link_pairs = (
         "$DOTDIR/.Xresources", ".Xresources",
         "$DOTDIR/tmux.conf", ".conf",
         "$DOTDIR/mutt/muttrc", ".muttrc",
-        "$DOTDIR/mutt/signature", ".signature"
-        "$DOTDIR/bashrc", ".bashrc"
+        "$DOTDIR/mutt/signature", ".signature",
+        "$DOTDIR/bashrc", ".bashrc",
+        "$DOTDIR/gitconfig", ".gitconfig",
+        "$DOTDIR/gitignore_global", ".gitignore_global"
 )
 
 for (( i = 0 ; i < ${#link_pairs[@]} ; i++)) do
