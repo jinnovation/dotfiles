@@ -7,8 +7,10 @@ then
   mv $HOMEDIR/.vim/ $HOMEDIR/.vim.old
 fi
 mkdir $HOMEDIR/.vim
+mkdir $HOMEDIR/.vim/autoload
 
 link_pairs=(
+        $DOTDIR/vim-plug/plug.vim  .vim/autoload/plug.vim
         $DOTDIR/vimrc              .vimrc
         $DOTDIR/gvimrc             .gvimrc
         $DOTDIR/vim/fn.vim         .vim/fn.vim
