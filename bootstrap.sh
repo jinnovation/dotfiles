@@ -11,7 +11,7 @@ then
 fi
 mkdir $HOMEDIR/.vim
 
-link_pairs = (
+link_pairs=(
         $DOTDIR/vimrc .vimrc
         $DOTDIR/gvimrc .gvimrc
         $DOTDIR/vim/fn.vim .vim/fn.vim
