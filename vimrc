@@ -1,5 +1,5 @@
-if filereadable(expand("~/.vim/plug.vim"))
-  source ~/.vim/plug.vim
+if filereadable(expand("~/.vim/plugins.vim"))
+  source ~/.vim/plugins.vim
 endif
 
 if filereadable(expand("~/.vim/fn.vim"))
