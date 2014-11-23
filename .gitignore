@@ -2,6 +2,5 @@
 
 .emacs.d/elpa/archives/
 /.emacs.d/projectile.cache
-vim-plug
 .emacs.d
 
