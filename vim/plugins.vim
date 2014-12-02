@@ -28,4 +28,7 @@ Plug 'wakatime/vim-wakatime'
 
 Plug 'tpope/vim-surround'
 
+Plug 'vim-scripts/lh-vim-lib'                                          
+Plug 'LucHermitte/local_vimrc'
+
 call plug#end()
