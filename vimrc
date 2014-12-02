@@ -11,6 +11,8 @@ let maplocalleader = "\\"
 
 set scrolloff=3
 
+set textwidth=80
+
 " search
 set incsearch
 set hlsearch
@@ -47,6 +49,9 @@ nmap <CR> o<Esc>k
 nmap <C-Tab> <C-w><C-w>
 nmap <C-S-Tab> <C-w>W
 
+" TODO: nmap <leader>ar to align selection 
+" TODO: nmap <leader>ae to align selection by equal signs
+
 map <C-n> :NERDTreeToggle<CR>
 map <F8> :TagbarToggle<CR>
 
@@ -66,7 +71,8 @@ if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
 
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 
 set statusline+=%{fugitive#statusline()}
-

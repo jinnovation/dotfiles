@@ -24,4 +24,8 @@ Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 Plug 'godlygeek/tabular'
 
+Plug 'wakatime/vim-wakatime'
+
+Plug 'tpope/vim-surround'
+
 call plug#end()
