@@ -63,6 +63,9 @@ map <Leader>bk :call BKill()<CR>
 map <Leader>bn :bn<CR>
 map <Leader>bd :bd<CR>
 
+map <Leader>gb :Gblame<CR>
+map <Leader>gs :Gstatus<CR>
+
 let g:NERDTreeWinSize=40
 let g:ctrlp_cmd = 'CtrlPMRU'
 
