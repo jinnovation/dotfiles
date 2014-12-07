@@ -31,4 +31,5 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/lh-vim-lib'                                          
 Plug 'LucHermitte/local_vimrc'
 
+Plug 'Lokaltog/vim-easymotion'
 call plug#end()

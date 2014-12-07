@@ -49,7 +49,7 @@ nmap <CR> o<Esc>k
 nmap <C-Tab> <C-w><C-w>
 nmap <C-S-Tab> <C-w>W
 
-" TODO: nmap <leader>ar to align selection 
+" TODO: nmap <leader>ar to align selection
 " TODO: nmap <leader>ae to align selection by equal signs
 
 map <C-n> :NERDTreeToggle<CR>
@@ -79,3 +79,31 @@ filetype plugin on
 filetype indent on
 
 set statusline+=%{fugitive#statusline()}
+
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
+" Without these mappings, `n` & `N` works fine. (These mappings just provide
+" different highlight method and have some other features )
+map n <Plug>(easymotion-next)
+map N <Plug>(easymotion-prev)
+
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+
+let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
+
+" Removes trailing spaces
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+
+nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
+
+autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd BufWritePre     * :call TrimWhiteSpace()
