@@ -81,8 +81,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
-set laststatus=2 " always display status line 
-set statusline+=%{fugitive#statusline()}
+set laststatus = 2 " always display status line
+set statusline += %{fugitive#statusline()}
 
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
@@ -113,5 +113,5 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *mutt-*              setfiletype mail
 augroup END
 
-let NERDSpaceDelims = 1 " space between comment delimiter and content 
+let NERDSpaceDelims = 1 " space between comment delimiter and content
 let NERDCompactSexyComs = 1
