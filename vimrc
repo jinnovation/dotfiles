@@ -1,3 +1,6 @@
+set exrc   " force vim to source vimrc file if present in working dir
+set secure " restrict usage of some commands in non-default vimrc files
+
 if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
 endif
@@ -23,7 +26,7 @@ set smartcase
 " interface
 set splitbelow
 set splitright
-set colorcolumn=80
+set colorcolumn = 80
 set number
 
 " editing
@@ -78,6 +81,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set laststatus=2 " always display status line 
 set statusline+=%{fugitive#statusline()}
 
 map  / <Plug>(easymotion-sn)
@@ -103,7 +107,11 @@ endfunction
 
 nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
 
-autocmd FileWritePre    * :call TrimWhiteSpace()
-autocmd FileAppendPre   * :call TrimWhiteSpace()
-autocmd FilterWritePre  * :call TrimWhiteSpace()
-autocmd BufWritePre     * :call TrimWhiteSpace()
+au BufRead /tmp/mutt-* set tw=72
+augroup filetypedetect
+  " Mail
+  autocmd BufRead,BufNewFile *mutt-*              setfiletype mail
+augroup END
+
+let NERDSpaceDelims = 1 " space between comment delimiter and content 
+let NERDCompactSexyComs = 1
