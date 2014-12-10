@@ -38,7 +38,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=()
+plugins=(archlinux git-extras colored-man grep)
 
 # User configuration
 
@@ -99,5 +99,5 @@ alias nethack-online='telnet nethack.alt.org'
 alias pacman='sudo pacman'
 alias fortune='fortune -a'
 alias open='xdg-open'
-alias grep='grep --color=always' 
 
+unset GREP_OPTIONS
