@@ -10,12 +10,13 @@ mkdir $HOMEDIR/.vim
 mkdir $HOMEDIR/.vim/autoload
 
 link_pairs=(
+        $DOTDIR/emacs              .emacs
         $DOTDIR/vim-plug/plug.vim  .vim/autoload/plug.vim
         $DOTDIR/vimrc              .vimrc
         $DOTDIR/gvimrc             .gvimrc
         $DOTDIR/vim/fn.vim         .vim/fn.vim
-        $DOTDIR/vim/plugins.vim       .vim/plugins.vim
-        $DOTDIR/.Xresources        .Xresources
+        $DOTDIR/vim/plugins.vim    .vim/plugins.vim
+        $DOTDIR/Xresources         .Xresources
         $DOTDIR/tmux.conf          tmux.conf
         $DOTDIR/mutt/muttrc        .muttrc
         $DOTDIR/mutt/signature     .signature
