@@ -23,6 +23,7 @@ link_pairs=(
         $DOTDIR/bashrc             .bashrc
         $DOTDIR/gitconfig          .gitconfig
         $DOTDIR/gitignore_global   .gitignore_global
+        $DOTDIR/nethackrc          .nethackrc
 )
 
 old_dotfiles=()
