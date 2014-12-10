@@ -1,4 +1,13 @@
-source "gpg2 -dq $HOME/.my-pwds.gpg |"
+source "~/.mutt/gmail_config"
+source "~/.mutt/color"
+source "~/.mutt/sidebar"
+source "~/.mutt/bindings"
+
+bind editor <space> noop # needed to accept IMAP folders with spaces in name 
+bind index,pager \# noop # unbind break-thread; # can be hit too easly, 
+                         # with no undo
+
+source "gpg2 -dq $HOME/.my-pwds.gpg |" # get $my_mutt_pw from GnuPG
 
 set envelope_from=yes
 set from="Jonathan Jin <jjin082693@gmail.com>"
@@ -7,26 +16,27 @@ set use_from=yes
 set edit_headers=yes
 
 set folder="imaps://imap.gmail.com:993"
-set imap_user="jjin082693@gmail.com"
 set imap_pass= $my_mutt_pw
 set spoolfile = "+INBOX"
 mailboxes = +INBOX
 
-set record = +Sent
-unset record
+set record = "+Sent Mail"
+unset record # no need; GMail SMTP server handles saving sent mail
+
+set postponed = +[Gmail]/Drafts
+
+set imap_user="jjin082693@gmail.com"
+set imap_pass= $my_mutt_pw
 
 set my_user = jjin082693
 
 set realname = "Jonathan Jin"
-set from = jjin082693@gmail.com
 set use_from = yes
 
 set smtp_url="smtp://jjin082693@smtp.gmail.com:587/"
 set smtp_pass = $my_mutt_pw
 set ssl_force_tls = yes
 set ssl_starttls = yes
-
-set postponed = +[Gmail]/Drafts
 
 unset imap_passive
 
@@ -36,41 +46,43 @@ set mail_check = 120
 set header_cache = $HOME/.cache/mutt
 set message_cachedir="$HOME/.cache/mutt"
 
-set sidebar_visible = yes
-set sidebar_width = 40
-
-macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
-macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
-bind index,pager \CP sidebar-prev
-bind index,pager \CN sidebar-next
-bind index,pager \CO sidebar-open
-
 set sort = reverse-threads
 set sort_aux = last-date-received
 
-macro index \' "<tag-pattern>~R !~D !~F<enter>\
-<tag-prefix><save-message>+[Gmail]/All <enter>" \
-"Archive"
+set query_command="goobook query '%s'"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+bind editor <Tab> complete-query
 
-# -*-muttrc-*-
+set mailcap_path = ~/.mutt/mailcap
+auto_view text/html
+alternative_order text/plain text/enriched text/html
 
-# Palette for use with the Linux console.  Black background.
+set beep_new
+set pipe_decode
+set thorough_search
 
-color hdrdefault blue black
-color quoted blue black
-color signature blue black
-color attachment red black
-color message brightred black
-color error brightred black
-color indicator black red
-color status brightgreen blue
-color tree white black
-color normal white black
-color markers red black
-color search white black
-color tilde brightmagenta black
-color index blue black ~F
-color index red black "~N|~O"
+alternates jjin082693@gmail.com jjin082693@uchicago.edu jonathan@jjin.me
 
-# color body brightwhite black '\*+[^*]+\*+'
-# color body brightwhite black '_+[^_]+_+'
+set pager_index_lines = 10
+set pager_context = 4
+set tilde
+
+macro pager  \Cu "|urlview<enter>" "call urlview to open links"
+
+set sig_dashes
+set edit_headers
+set askcc
+set fcc_attach
+set reverse_name
+set include
+set forward_quote
+
+set timeout = 10
+
+set use_from
+
+macro index \e1 ":set from=jjin082693@gmail.com<enter>" "switch to jjin082693@gmail.com"
+macro index \e2 ":set from=jonathan@jjin.me<enter>" "switch to jonathan@jjin.me"
+macro index \e3 ":set from=jjin082693@uchicago.edu<enter>" "switch to jjin082693@uchicago.edu"
+
+set status_format = "-%r-%f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---%>-"
