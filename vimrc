@@ -107,10 +107,12 @@ endfunction
 
 nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
 
-au BufRead /tmp/mutt-* set tw=72
 augroup filetypedetect
   " Mail
-  autocmd BufRead,BufNewFile *mutt-*              setfiletype mail
+  autocmd BufRead,BufNewFile *mutt-*     setfiletype mail
+
+  " gitconfig
+  autocmd BufRead,BufNewFile */gitconfig setfiletype gitconfig
 augroup END
 
 let NERDSpaceDelims = 1 " space between comment delimiter and content
