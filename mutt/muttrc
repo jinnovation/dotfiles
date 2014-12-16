@@ -3,8 +3,10 @@ source "~/.mutt/color"
 source "~/.mutt/sidebar"
 source "~/.mutt/bindings"
 
-bind editor <space> noop # needed to accept IMAP folders with spaces in name 
-bind index,pager \# noop # unbind break-thread; # can be hit too easly, 
+set editor = "vim"
+
+bind editor <space> noop # needed to accept IMAP folders with spaces in name
+bind index,pager \# noop # unbind break-thread; # can be hit too easly,
                          # with no undo
 
 source "gpg2 -dq $HOME/.my-pwds.gpg |" # get $my_mutt_pw from GnuPG
