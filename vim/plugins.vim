@@ -28,9 +28,6 @@ Plug 'wakatime/vim-wakatime'
 
 Plug 'tpope/vim-surround'
 
-Plug 'vim-scripts/lh-vim-lib'
-Plug 'LucHermitte/local_vimrc'
-
 Plug 'Lokaltog/vim-easymotion'
 
 Plug 'godlygeek/csapprox'
