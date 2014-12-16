@@ -82,7 +82,6 @@ filetype plugin on
 filetype indent on
 
 set laststatus=2 " always display status line
-set statusline += %{fugitive#statusline()}
 
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)

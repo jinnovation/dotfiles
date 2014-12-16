@@ -6,3 +6,4 @@ set guioptions-=b  " bottom scrollbar
 set guioptions+=c  " console-like dialogs
 
 colorscheme gotham256
+set statusline += %{fugitive#statusline()}
