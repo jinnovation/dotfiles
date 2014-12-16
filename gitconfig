@@ -17,11 +17,10 @@
 	co             = checkout
 	st             = status
 	lg             = log --graph --color --all --decorate
-  lgo            = log --graph --color --all --pretty=oneline-author
-[color]
-	ui             = true
+        lgo            = log --graph --color --all --pretty=oneline-author
+
 [push]
 	default        = current
 
 [pretty]
-  oneline-author = "%C(auto)%h%d %Cblue%an %Creset%s"
+        oneline-author = "%C(auto)%h%d %Cblue%an %Creset%s"
