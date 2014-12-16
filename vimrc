@@ -26,7 +26,7 @@ set smartcase
 " interface
 set splitbelow
 set splitright
-set colorcolumn = 80
+set colorcolumn=80
 set number
 
 " editing
@@ -81,7 +81,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-set laststatus = 2 " always display status line
+set laststatus=2 " always display status line
 set statusline += %{fugitive#statusline()}
 
 map  / <Plug>(easymotion-sn)
@@ -115,5 +115,6 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile */gitconfig setfiletype gitconfig
 augroup END
 
-let NERDSpaceDelims = 1 " space between comment delimiter and content
-let NERDCompactSexyComs = 1
+let NERDSpaceDelims=1 " space between comment delimiter and content
+let NERDCompactSexyComs=1
+
