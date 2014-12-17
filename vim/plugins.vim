@@ -1,11 +1,13 @@
 call plug#begin(".vim/plugged")
 
+" colorschemes 
 Plug 'whatyouhide/vim-gotham'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
+
 Plug 'tpope/vim-fugitive'
-Plug 'Yggdroot/indentLine'
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-airline'
 Plug 'Raimondi/delimitMate'
 Plug 'airblade/vim-gitgutter'
@@ -31,4 +33,6 @@ Plug 'tpope/vim-surround'
 Plug 'Lokaltog/vim-easymotion'
 
 Plug 'godlygeek/csapprox'
+
+Plug 'embear/vim-localvimrc'
 call plug#end()

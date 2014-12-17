@@ -1,3 +1,6 @@
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
