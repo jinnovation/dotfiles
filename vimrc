@@ -117,3 +117,4 @@ augroup END
 let NERDSpaceDelims=1 " space between comment delimiter and content
 let NERDCompactSexyComs=1
 
+colorscheme gotham
