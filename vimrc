@@ -1,6 +1,3 @@
-set exrc   " force vim to source vimrc file if present in working dir
-set secure " restrict usage of some commands in non-default vimrc files
-
 if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
 endif
@@ -13,12 +10,13 @@ if filereadable(expand("~/.vim/ftype.vim"))
   source ~/.vim/ftype.vim
 endif
 
+colorscheme gotham
+hi Normal ctermfg=252 ctermbg=none
+
 let mapleader = ","
 let maplocalleader = "\\"
 
 set scrolloff=3
-
-set textwidth=80
 
 " search
 set incsearch
@@ -32,6 +30,7 @@ set splitbelow
 set splitright
 set colorcolumn=80
 set number
+set textwidth=80
 
 " editing
 set expandtab
@@ -108,5 +107,3 @@ nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
 
 let NERDSpaceDelims=1 " space between comment delimiter and content
 let NERDCompactSexyComs=1
-
-colorscheme gotham
