@@ -1,10 +1,6 @@
 " custom styling for Linux kernel development
 " designed to be used in conjunction with a main 'default' config
 
-if filereadable(expand("~/.vimrc"))
-  source ~/.vimrc
-endif
-
 set tabstop=8
 set softtabstop=8
 set shiftwidth=8
