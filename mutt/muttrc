@@ -18,7 +18,6 @@ set use_from=yes
 set edit_headers=yes
 
 set folder="imaps://imap.gmail.com:993"
-set imap_pass= $my_mutt_pw
 set spoolfile = "+INBOX"
 mailboxes = +INBOX
 
