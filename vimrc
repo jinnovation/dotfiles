@@ -104,20 +104,7 @@ map <Leader>h <Plug>(easymotion-linebackward)
 
 let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 
-" Removes trailing spaces
-function! TrimWhiteSpace()
-    %s/\s\+$//e
-endfunction
-
 nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
-
-augroup filetypedetect
-  " Mail
-  autocmd BufRead,BufNewFile *mutt-*     setfiletype mail
-
-  " gitconfig
-  autocmd BufRead,BufNewFile */gitconfig setfiletype gitconfig
-augroup END
 
 let NERDSpaceDelims=1 " space between comment delimiter and content
 let NERDCompactSexyComs=1

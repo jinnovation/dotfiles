@@ -9,3 +9,8 @@ function! BKill()
     bd #
   endif
 endfunction
+
+" Removes trailing spaces
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
