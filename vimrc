@@ -38,17 +38,20 @@ set shiftwidth=2
 
 set cursorline
 
-set shortmess+=I
+set shortmess+=I " don't display intro message on Vim start
 
 set autochdir
 
 set visualbell
 
-set ai
+set autoindent
+set laststatus=2 " always display status line
 
-syntax on
+syntax on " enable syntax highlighting
 nmap <S-Enter> O<esc>j
 nmap <CR> o<Esc>k
+
+" FIXME: doesn't cooperate with tmux
 nmap <C-Tab> <C-w><C-w>
 nmap <C-S-Tab> <C-w>W
 
@@ -80,8 +83,6 @@ endif
 filetype on
 filetype plugin on
 filetype indent on
-
-set laststatus=2 " always display status line
 
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)

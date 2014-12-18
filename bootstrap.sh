@@ -9,6 +9,9 @@ fi
 mkdir $HOMEDIR/.vim
 mkdir $HOMEDIR/.vim/autoload
 
+# TODO: if vim-plug is empty, exit with note to init submodule
+#       execute PlugInstall on vim
+
 link_pairs=(
         $DOTDIR/emacs              .emacs
         $DOTDIR/vim-plug/plug.vim  .vim/autoload/plug.vim
@@ -40,4 +43,4 @@ for (( i=0 ; i < ${#link_pairs[@]} ; i+=2 )) do
   ln -s ${link_pairs[$i]} $HOMEDIR/${link_pairs[$i+1]}
 done
 
-# TODO: optionally delete *.old files 
+# TODO: optionally delete *.old files
