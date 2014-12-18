@@ -19,6 +19,7 @@ link_pairs=(
         $DOTDIR/gvimrc             .gvimrc
         $DOTDIR/vim/fn.vim         .vim/fn.vim
         $DOTDIR/vim/plugins.vim    .vim/plugins.vim
+        $DOTDIR/vim/ftype.vim      .vim/ftype.vim
         $DOTDIR/Xresources         .Xresources
         $DOTDIR/tmux.conf          tmux.conf
         $DOTDIR/mutt/muttrc        .muttrc

@@ -9,6 +9,10 @@ if filereadable(expand("~/.vim/fn.vim"))
   source ~/.vim/fn.vim
 endif
 
+if filereadable(expand("~/.vim/ftype.vim"))
+  source ~/.vim/ftype.vim
+endif
+
 let mapleader = ","
 let maplocalleader = "\\"
 
