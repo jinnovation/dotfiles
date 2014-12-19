@@ -1,6 +1,6 @@
 call plug#begin(".vim/plugged")
 
-" colorschemes 
+" colorschemes
 Plug 'whatyouhide/vim-gotham'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }

@@ -6,4 +6,3 @@ hi SignColumn ctermbg=none
 hi GitGutterAdd ctermbg=none
 hi GitGutterDelete ctermbg=none
 hi GitGutterChange ctermbg=none
-
