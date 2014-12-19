@@ -67,8 +67,6 @@ let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 let NERDSpaceDelims=1 " space between comment delimiter and content
 let NERDCompactSexyComs=1
 
-colorscheme gotham
-
 if filereadable(expand("~/.vim/modules/color.vim"))
   source ~/.vim/modules/color.vim
 endif

@@ -1,3 +1,5 @@
+colorscheme gotham
+
 hi Normal ctermfg=252 ctermbg=none
 hi LineNr ctermbg=none
 hi SignColumn ctermbg=none
