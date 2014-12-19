@@ -15,8 +15,8 @@ mkdir $HOMEDIR/.vim/autoload
 link_pairs=(
         $DOTDIR/emacs              .emacs
         $DOTDIR/vim-plug/plug.vim  .vim/autoload/plug.vim
-        $DOTDIR/vimrc              .vimrc
-        $DOTDIR/gvimrc             .gvimrc
+        $DOTDIR/vim/vimrc          .vimrc
+        $DOTDIR/vim/gvimrc         .gvimrc
         $DOTDIR/vim/modules        .vim/modules
         $DOTDIR/Xresources         .Xresources
         $DOTDIR/tmux.conf          tmux.conf
