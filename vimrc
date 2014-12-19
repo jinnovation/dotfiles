@@ -6,14 +6,6 @@ if filereadable(expand("~/.vim/modules/fn.vim"))
   source ~/.vim/modules/fn.vim
 endif
 
-if filereadable(expand("~/.vim/modules/ftype.vim"))
-  source ~/.vim/modules/ftype.vim
-endif
-
-if filereadable(expand("~/.vim/modules/key.vim"))
-  source ~/.vim/modules/key.vim
-endif
-
 set scrolloff=3
 
 " search
@@ -66,6 +58,14 @@ let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 
 let NERDSpaceDelims=1 " space between comment delimiter and content
 let NERDCompactSexyComs=1
+
+if filereadable(expand("~/.vim/modules/ftype.vim"))
+  source ~/.vim/modules/ftype.vim
+endif
+
+if filereadable(expand("~/.vim/modules/key.vim"))
+  source ~/.vim/modules/key.vim
+endif
 
 if filereadable(expand("~/.vim/modules/color.vim"))
   source ~/.vim/modules/color.vim
