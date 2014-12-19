@@ -1,6 +1,4 @@
 augroup filetypedetect
-  autocmd!
-
   " Mail
   autocmd BufRead,BufNewFile *mutt-*     setfiletype mail
 
