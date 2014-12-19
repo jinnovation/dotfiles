@@ -17,11 +17,7 @@ link_pairs=(
         $DOTDIR/vim-plug/plug.vim  .vim/autoload/plug.vim
         $DOTDIR/vimrc              .vimrc
         $DOTDIR/gvimrc             .gvimrc
-        $DOTDIR/vim/fn.vim         .vim/fn.vim
-        $DOTDIR/vim/plugins.vim    .vim/plugins.vim
-        $DOTDIR/vim/ftype.vim      .vim/ftype.vim
-        $DOTDIR/vim/color.vim      .vim/color.vim
-        $DOTDIR/vim/key.vim        .vim/key.vim
+        $DOTDIR/vim/modules        .vim/modules
         $DOTDIR/Xresources         .Xresources
         $DOTDIR/tmux.conf          tmux.conf
         $DOTDIR/mutt/muttrc        .muttrc

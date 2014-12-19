@@ -1,20 +1,20 @@
-if filereadable(expand("~/.vim/plugins.vim"))
-  source ~/.vim/plugins.vim
+if filereadable(expand("~/.vim/modules/plugins.vim"))
+  source ~/.vim/modules/plugins.vim
 endif
 
-if filereadable(expand("~/.vim/fn.vim"))
-  source ~/.vim/fn.vim
+if filereadable(expand("~/.vim/modules/fn.vim"))
+  source ~/.vim/modules/fn.vim
 endif
 
-if filereadable(expand("~/.vim/ftype.vim"))
-  source ~/.vim/ftype.vim
+if filereadable(expand("~/.vim/modules/ftype.vim"))
+  source ~/.vim/modules/ftype.vim
 endif
 
 let mapleader = ","
 let maplocalleader = "\\"
 
-if filereadable(expand("~/.vim/key.vim"))
-  source ~/.vim/key.vim
+if filereadable(expand("~/.vim/modules/key.vim"))
+  source ~/.vim/modules/key.vim
 endif
 
 set scrolloff=3
@@ -71,6 +71,7 @@ let NERDSpaceDelims=1 " space between comment delimiter and content
 let NERDCompactSexyComs=1
 
 colorscheme gotham
-if filereadable(expand("~/.vim/color.vim"))
-  source ~/.vim/color.vim
+
+if filereadable(expand("~/.vim/modules/color.vim"))
+  source ~/.vim/modules/color.vim
 endif
