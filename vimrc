@@ -10,9 +10,6 @@ if filereadable(expand("~/.vim/modules/ftype.vim"))
   source ~/.vim/modules/ftype.vim
 endif
 
-let mapleader = ","
-let maplocalleader = "\\"
-
 if filereadable(expand("~/.vim/modules/key.vim"))
   source ~/.vim/modules/key.vim
 endif

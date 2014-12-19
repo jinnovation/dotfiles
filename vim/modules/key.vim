@@ -1,3 +1,6 @@
+let mapleader = ","
+let maplocalleader = "\\"
+
 nnoremap <S-Enter> O<esc>j
 nnoremap <CR> o<Esc>k
 
