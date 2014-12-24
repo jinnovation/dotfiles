@@ -44,3 +44,9 @@ map L $
 inoremap <esc> <nop>
 
 nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
+
+nnoremap <leader><C-p> :CtrlPTag<cr>
+nnoremap <silent> <leader><C-t> :TagbarToggle<cr>
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
