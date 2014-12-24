@@ -1,3 +1,6 @@
+set nocompatible
+set showcmd
+
 set scrolloff=3
 
 " search
@@ -46,7 +49,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 
 let NERDSpaceDelims=1 " space between comment delimiter and content
 let NERDCompactSexyComs=1
