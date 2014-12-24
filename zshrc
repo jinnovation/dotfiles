@@ -96,4 +96,8 @@ alias pacman='sudo pacman'
 alias fortune='fortune -a'
 alias open='xdg-open'
 
+alias t="task"
+alias ts="task synchronize"
+alias ta="task add"
+
 unset GREP_OPTIONS
