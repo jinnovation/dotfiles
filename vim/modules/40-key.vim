@@ -1,4 +1,4 @@
-let mapleader = ","
+let mapleader = "\<Space>"
 let maplocalleader = "\\"
 
 nnoremap <S-Enter> O<esc>j
@@ -48,5 +48,6 @@ nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
 nnoremap <leader><C-p> :CtrlPTag<cr>
 nnoremap <silent> <leader><C-t> :TagbarToggle<cr>
 
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+nnoremap <leader>w :w<cr>
