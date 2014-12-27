@@ -100,4 +100,6 @@ alias t="task"
 alias ts="task synchronize"
 alias ta="task add"
 
+alias news="newsbeuter"
+
 unset GREP_OPTIONS

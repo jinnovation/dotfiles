@@ -1,0 +1,24 @@
+http://www.joystiq.com/rss.xml entertainment "~Joystiq"
+https://news.ycombinator.com/rss software
+http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989 news "~Al Jazeera"
+http://ny.curbed.com/atom.xml "real estate" entertainment
+http://www.avclub.com/feed/rss/ entertainment
+http://fivethirtyeight.com/all/feed
+http://www.tor.com/rss/frontpage_full literature "~Tor.com"
+http://feeds.feedburner.com/themillionsblog/fedw literature
+
+http://feeds.bbci.co.uk/news/world/rss.xml news
+http://feeds.bbci.co.uk/news/business/rss.xml news
+http://feeds.bbci.co.uk/news/science_and_environment/rss.xml news
+http://feeds.bbci.co.uk/news/technology/rss.xml news news
+http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml news
+
+http://online.wsj.com/xml/rss/3_7085.xml news
+http://online.wsj.com/xml/rss/3_7014.xml news
+http://online.wsj.com/xml/rss/3_7455.xml news
+
+http://rss.escapistmagazine.com/news/0.xml entertainment "~The Escapist"
+http://rss.escapistmagazine.com/videos/list/1.xml series entertainment "video games" "~The Escapist: Zero Punctuation"
+
+http://feeds.feedburner.com/seriouseatsfeaturesvideos culinary
+http://feeds.feedburner.com/codinghorror software
