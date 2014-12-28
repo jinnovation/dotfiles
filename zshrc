@@ -102,4 +102,7 @@ alias ta="task add"
 
 alias news="newsbeuter"
 
+alias tran="transmission-remote"
+alias tranc="transmission-remote-cli"
+
 unset GREP_OPTIONS
