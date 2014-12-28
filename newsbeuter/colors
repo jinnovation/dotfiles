@@ -1,4 +1,4 @@
-highlight all    "^ *[0-9]+ *N"                    color156 default
+highlight all    "^ *[0-9]+ N"                    color156 default
 
 color listfocus white black
 color listfocus_unread white black bold

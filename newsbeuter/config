@@ -1,7 +1,7 @@
 include "~/.newsbeuter/colors"
 include "~/.newsbeuter/keys"
 
-browser "google-chrome-beta %u"
+browser "/home/jjin/.newsbeuter/open_link %u"
 
 auto-reload yes
 reload-time 30
@@ -14,4 +14,9 @@ max-items 100
 
 text-width 80
 
-feedlist-format "%4i %n %11u %t %> %T"
+download-full-page yes
+
+save-path "~/Downloads/articles"
+download-path "~/Downloads/podcasts/%n"
+max-downloads 3
+player "mpv"
