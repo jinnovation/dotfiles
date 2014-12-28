@@ -11,9 +11,6 @@ nnoremap <C-S-Tab> <C-w>W
 " TODO: nnoremap <leader>ar to align selection
 " TODO: nnoremap <leader>ae to align selection by equal signs
 
-noremap <C-n> :NERDTreeToggle<CR>
-noremap <F8> :TagbarToggle<CR>
-
 inoremap <C-f> <C-o>l
 inoremap <C-b> <C-o>h
 
