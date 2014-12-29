@@ -96,3 +96,5 @@ alias tran="transmission-remote"
 alias tranc="transmission-remote-cli"
 
 unset GREP_OPTIONS
+
+export DISABLE_AUTO_TITLE=true
