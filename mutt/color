@@ -1,33 +1,29 @@
 # vi: ft=muttrc
 
-
 set my_bg=default
 
-## mutt defaults
 color hdrdefault blue black
 color quoted blue black
-color signature blue black
-color attachment red black
-color message brightred black
-color error brightred black
-color indicator black red
+color signature brightmagenta $my_bg
+color attachment black green
+color message white $my_bg
+color error red $my_bg
+
+color indicator brightcyan black
+mono indicator reverse
+
 color status brightcyan black
 
-color tree white black
-color normal white black
-color markers red black
-color search white black
-color tilde brightmagenta black
-color index blue black ~F
-color index red black "~N|~O"
+color tree brightblue $my_bg
+color normal white $my_bg
+color markers brightcyan $my_bg
+color search brightwhite magenta
+color tilde green $my_bg
 
 # color body brightwhite black '\*+[^*]+\*+'
 # color body brightwhite black '_+[^_]+_+'
 
-## Theme kindly inspired from
-## http://nongeekshandbook.blogspot.ie/2009/03/mutt-color-configuration.html
-
-## Colours for items in the index
+color index cyan $my_bg *
 color index brightcyan $my_bg ~N
 color index brightred $my_bg ~O
 color index brightyellow $my_bg ~F
@@ -91,23 +87,8 @@ color quoted5 yellow $my_bg
 color quoted6 red $my_bg
 color quoted7 green $my_bg
 
-## Default color definitions
-#color hdrdefault white green
-color signature brightmagenta $my_bg
-color indicator black cyan
-color attachment black green
-color error red $my_bg
-color message white $my_bg
-color search brightwhite magenta
-#color status brightyellow blue
-color tree brightblue $my_bg
-color normal white $my_bg
-color tilde green $my_bg
 color bold brightyellow $my_bg
 #color underline magenta $my_bg
-color markers brightcyan $my_bg
 
-## Colour definitions when on a mono screen
 mono bold bold
 mono underline underline
-mono indicator reverse
