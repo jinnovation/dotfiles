@@ -32,12 +32,13 @@ http://www.joelonsoftware.com/rss.xml software
 http://gdata.youtube.com/feeds/api/users/foodwishes/uploads food "~Food Wishes"
 
 http://feeds.feedburner.com/laptopmag tech "~Laptop Mag"
+http://feeds.feedburner.com/AndroidPolice tech android "~Android Police"
 http://www.eater.com/rss/index.xml food "~Eater"
-http://ny.eater.com/rss/index.xml food "~Eater NY"
+http://ny.eater.com/rss/index.xml food NY "~Eater NY"
 
 http://notwithoutsalt.com/feed/ food
-http://feeds.feedburner.com/nymag/grubstreet food
-http://feeds.feedburner.com/nymag/Food food
+http://feeds.feedburner.com/nymag/grubstreet food NY
+http://feeds.feedburner.com/nymag/Food food NY
 http://feeds.feedburner.com/seriouseatsfeaturesvideos food
 
 http://xkcd.com/rss.xml comics
