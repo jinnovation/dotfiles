@@ -48,3 +48,4 @@ nnoremap <silent> <leader><C-t> :TagbarToggle<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 nnoremap <leader>w :w<cr>
+nnoremap <leader>pwd :pwd<cr>
