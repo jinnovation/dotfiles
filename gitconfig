@@ -18,6 +18,9 @@
 	st             = status
 	lg             = log --graph --color --all --decorate
 	lgo            = log --graph --color --all --pretty=oneline-author
+	ci             = commit
+	a              = add
+	d              = diff
 
 [push]
 	default        = current
