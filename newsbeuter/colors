@@ -1,9 +1,11 @@
-highlight all    "^ *[0-9]+ N"                    color156 default
+highlight feedlist "\\([0-9]+/[0-9]+\\)" red default
+highlight feedlist    " N  "                    green default
+highlight feedlist " {3}[a-zA-Z ]+$" cyan default
 
 color listfocus white black
 color listfocus_unread white black bold
 color listnormal_unread green default
-color info white blue
+color info cyan black
 
 highlight article     "^Feed:.*"                            yellow default
 highlight article     "^Title:.*"                           yellow default
