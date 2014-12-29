@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -e
+
 HOMEDIR=/home/jjin/
 DOTDIR=$HOMEDIR/dotfiles
 
