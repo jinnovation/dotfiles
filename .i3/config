@@ -168,6 +168,15 @@ bar {
     }
 }
 
+bar {
+  position bottom
+  tray_output none
+  workspace_buttons no
+  binding_mode_indicator no
+
+  status_command /home/jjin/.config/conky-i3bar-rss
+}
+
 new_float none
 new_window pixel 1
 
