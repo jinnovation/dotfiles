@@ -20,3 +20,5 @@ save-path "~/Downloads/articles"
 download-path "~/Downloads/podcasts/%n"
 max-downloads 3
 player "mpv"
+
+feedlist-format "%4i %n %11u %t %> %T"
