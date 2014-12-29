@@ -1,8 +1,7 @@
-http://www.joystiq.com/rss.xml entertainment "~Joystiq"
 https://news.ycombinator.com/rss software
 http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989 news "~Al Jazeera"
 http://ny.curbed.com/atom.xml "real estate" entertainment
-http://www.avclub.com/feed/rss/ entertainment
+http://www.avclub.com/feed/rss/ "movies and tv"
 http://fivethirtyeight.com/all/feed
 http://www.tor.com/rss/frontpage_full literature "~Tor.com"
 http://feeds.feedburner.com/themillionsblog/fedw literature
@@ -18,18 +17,31 @@ http://online.wsj.com/xml/rss/3_7014.xml news
 http://online.wsj.com/xml/rss/3_7455.xml news
 
 http://rss.escapistmagazine.com/news/0.xml entertainment "~The Escapist"
-http://rss.escapistmagazine.com/videos/list/1.xml series entertainment "video games" "~The Escapist: Zero Punctuation"
+http://rss.escapistmagazine.com/videos/list/1.xml entertainment "video games" "~The Escapist: Zero Punctuation"
+http://www.joystiq.com/rss.xml entertainment "~Joystiq"
+http://rss.escapistmagazine.com/videos/podcast/167-e15a29097a5b663fa43b258772591ecc.xml entertainment
+http://rss.escapistmagazine.com/videos/podcast/207-9c9b9e46008114239a309039de39d1d0.xml entertainment
+http://rss.escapistmagazine.com/videos/podcast/210-66bb11de87a7440f96b5a3f0428e9dea.xml entertainment
+http://feeds.feedburner.com/RockPaperShotgun entertainment
 
-http://feeds.feedburner.com/seriouseatsfeaturesvideos culinary
 http://feeds.feedburner.com/codinghorror software
+http://feeds.feedburner.com/thisdeveloperslife software
+http://feeds.feedburner.com/oreilly/news software
+http://www.joelonsoftware.com/rss.xml software
 
-http://xkcd.com/rss.xml
-http://feeds.feedburner.com/Explosm
+http://gdata.youtube.com/feeds/api/users/foodwishes/uploads food "~Food Wishes"
 
-http://feeds.feedburner.com/thisdeveloperslife
+http://feeds.feedburner.com/laptopmag tech "~Laptop Mag"
+http://www.eater.com/rss/index.xml food "~Eater"
+http://ny.eater.com/rss/index.xml food "~Eater NY"
 
-http://rss.escapistmagazine.com/videos/podcast/167-e15a29097a5b663fa43b258772591ecc.xml
-http://rss.escapistmagazine.com/videos/podcast/207-9c9b9e46008114239a309039de39d1d0.xml
-http://rss.escapistmagazine.com/videos/podcast/210-66bb11de87a7440f96b5a3f0428e9dea.xml
+http://notwithoutsalt.com/feed/ food
+http://feeds.feedburner.com/nymag/grubstreet food
+http://feeds.feedburner.com/nymag/Food food
+http://feeds.feedburner.com/seriouseatsfeaturesvideos food
 
-http://gdata.youtube.com/feeds/api/users/foodwishes/uploads "~Food Wishes"
+http://xkcd.com/rss.xml comics
+http://feeds.feedburner.com/Explosm comics
+http://feed.dilbert.com/dilbert/daily_strip comics "~Dilbert"
+http://feeds.feedburner.com/smbc-comics/PvLb comics "~SMBC: Saturday Morning Breakfast Cereal"
+http://www.questionablecontent.net/QCRSS.xml comics "~Questionable Content"
