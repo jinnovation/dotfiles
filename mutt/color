@@ -11,7 +11,8 @@ color attachment red black
 color message brightred black
 color error brightred black
 color indicator black red
-color status brightgreen blue
+color status brightcyan black
+
 color tree white black
 color normal white black
 color markers red black
