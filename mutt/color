@@ -3,8 +3,11 @@
 set my_bg=default
 
 color hdrdefault blue black
+
 color quoted blue black
+
 color signature brightmagenta $my_bg
+
 color attachment black green
 color message white $my_bg
 color error red $my_bg
@@ -23,7 +26,7 @@ color tilde green $my_bg
 # color body brightwhite black '\*+[^*]+\*+'
 # color body brightwhite black '_+[^_]+_+'
 
-color index cyan $my_bg *
+color index white $my_bg "*"
 color index brightcyan $my_bg ~N
 color index brightred $my_bg ~O
 color index brightyellow $my_bg ~F
