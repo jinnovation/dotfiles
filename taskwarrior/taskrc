@@ -1,0 +1,24 @@
+# [Created by task 2.3.0 12/20/2014 11:22:04]
+# Taskwarrior program configuration file.
+# For more documentation, see http://taskwarrior.org or try 'man task', 'man task-faq',
+# 'man task-tutorial', 'man task-color', 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# Use the command 'task show' to see all defaults and overrides
+
+data.location=~/.task
+
+# Color themes located in /usr/share/doc/task/rc/
+
+taskd.server=freecinc.com:53589
+taskd.key=\/home\/jjin\/.task\/freecinc\/freecinc_3482e9c4.key.pem
+taskd.certificate=\/home\/jjin\/.task\/freecinc\/freecinc_3482e9c4.cert.pem
+taskd.ca=\/home\/jjin\/.task\/freecinc\/freecinc_3482e9c4.ca.pem
+taskd.credentials=FreeCinc\/freecinc_3482e9c4\/ee33c535-bff4-4458-8d3f-f2d232f7a2d7
+
+report.next.columns=id,project,priority,due,start.active,urgency,description,tags
+report.next.labels=ID,Proj,Pri,Due,A,Urg,Description,Tags
