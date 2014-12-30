@@ -32,6 +32,9 @@ http://www.joelonsoftware.com/rss.xml software
 http://gdata.youtube.com/feeds/api/users/foodwishes/uploads food "~Food Wishes"
 
 http://feeds.feedburner.com/laptopmag tech "~Laptop Mag"
+http://www.engadget.com/rss.xml tech "~Engadget"
+http://recode.net/feed/ tech
+http://recode.net/category/reviews/feed/
 http://feeds.feedburner.com/AndroidPolice tech android "~Android Police"
 http://www.eater.com/rss/index.xml food "~Eater"
 http://ny.eater.com/rss/index.xml food NY "~Eater NY"
