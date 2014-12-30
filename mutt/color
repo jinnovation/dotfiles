@@ -12,7 +12,7 @@ color attachment black green
 color message white $my_bg
 color error red $my_bg
 
-color indicator brightcyan black
+color indicator brightwhite $my_bg
 mono indicator reverse
 
 color status brightcyan black
@@ -27,11 +27,11 @@ color tilde green $my_bg
 # color body brightwhite black '_+[^_]+_+'
 
 color index white $my_bg "*"
-color index brightcyan $my_bg ~N
-color index brightred $my_bg ~O
-color index brightyellow $my_bg ~F
+color index cyan $my_bg ~N
+color index red $my_bg ~O
+color index yellow $my_bg ~F
 color index black green ~T
-color index brightred $my_bg ~D
+color index red $my_bg ~D
 mono index bold ~N
 mono index bold ~F
 mono index bold ~T
