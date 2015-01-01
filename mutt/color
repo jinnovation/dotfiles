@@ -15,7 +15,7 @@ color error red $my_bg
 color indicator brightwhite $my_bg
 mono indicator reverse
 
-color status brightcyan black
+color status brightcyan $my_bg
 
 color tree brightblue $my_bg
 color normal white $my_bg
