@@ -19,15 +19,13 @@ http://online.wsj.com/xml/rss/3_7455.xml news
 http://rss.escapistmagazine.com/news/0.xml entertainment "~The Escapist"
 http://rss.escapistmagazine.com/videos/list/1.xml entertainment "video games" "~The Escapist: Zero Punctuation"
 http://www.joystiq.com/rss.xml entertainment "~Joystiq"
-http://rss.escapistmagazine.com/videos/podcast/167-e15a29097a5b663fa43b258772591ecc.xml entertainment
-http://rss.escapistmagazine.com/videos/podcast/207-9c9b9e46008114239a309039de39d1d0.xml entertainment
-http://rss.escapistmagazine.com/videos/podcast/210-66bb11de87a7440f96b5a3f0428e9dea.xml entertainment
 http://feeds.feedburner.com/RockPaperShotgun entertainment
 
 http://feeds.feedburner.com/codinghorror software
 http://feeds.feedburner.com/thisdeveloperslife software
 http://feeds.feedburner.com/oreilly/news software
 http://www.joelonsoftware.com/rss.xml software
+http://onethingwell.org/rss software
 
 http://gdata.youtube.com/feeds/api/users/foodwishes/uploads food "~Food Wishes"
 
