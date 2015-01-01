@@ -3,3 +3,8 @@ vim
 git
 tmux
 rxvt-unicode
+unclutter
+dzen2
+
+# AUR
+i3blocks
