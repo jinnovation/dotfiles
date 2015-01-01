@@ -1,0 +1,57 @@
+#!/bin/ruby
+#
+# Toggle timezones in i3blocks
+# Author: Vivien Didelot <vivien.didelot@gmail.com>
+# Modified By: Jonathan Jin <jonathan@jjin.me>
+#
+# Fill the ZONES array and define a block like this:
+#
+#     [timezone]
+#     command=THIS_SCRIPT
+#     interval=5
+
+TIMES = [
+  { label: "Chicago", zone: "America/Chicago" },
+  { label: "New York", zone: "America/New_York" },
+  { label: "China", zone: "Asia/Hong_Kong" }
+]
+
+CACHE = "/tmp/tz"
+
+def datetime zone, format
+  %x(TZ=#{ zone } date '+#{ format }')
+end
+
+def get_timezone
+  if File.exist? CACHE
+    cached_index = File.read(CACHE).to_i
+
+    time = TIMES[cached_index]
+  else
+    time = TIMES.first
+  end
+
+  # toggle on click
+  if ENV["BLOCK_BUTTON"].to_i > 0
+
+    index = TIMES.index(time) || -1
+    index = (index + 1) % TIMES.size
+    time = TIMES[index]
+
+    # cache the timezone
+    File.open(CACHE, 'w') { |f| f.write(index) }
+  end
+
+  time
+end
+
+time = get_timezone
+
+full_text = "#{ time[:label] }: #{ datetime(time[:zone], "%D %T") }"
+short_text = "#{ time[:label].chars.first }: #{ datetime(time[:zone], "%T") }"
+
+# output the block
+puts full_text
+puts short_text
+
+# vim: ts=2 sw=2 et
