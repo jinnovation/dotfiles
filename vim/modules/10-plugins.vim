@@ -27,11 +27,9 @@ Plug 'godlygeek/tabular'
 
 Plug 'wakatime/vim-wakatime'
 
-Plug 'tpope/vim-surround'
-
 Plug 'Lokaltog/vim-easymotion'
 
-Plug 'godlygeek/csapprox'
-
 Plug 'embear/vim-localvimrc'
+
+Plug 'mileszs/ack.vim'
 call plug#end()
