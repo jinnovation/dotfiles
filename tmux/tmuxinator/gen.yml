@@ -20,14 +20,14 @@ root: ~/
 
 windows:
   - general:
-      layout: e6e2,239x73,0,0{104x73,0,0[104x40,0,0,0,104x32,0,41,2],134x73,105,0[134x9,105,0,3,134x63,105,10,7)]}
+      layout: 02e2,239x73,0,0{104x73,0,0[104x31,0,0,0,104x41,0,32,2],134x73,105,0[134x9,105,0,1,134x63,105,10,3]}
       panes:
         - mutt
         - newsbeuter
         - htop
         - # empty
   - editor:
-      layout: main-vertical
+      layout: c108,239x73,0,0{154x73,0,0,10,84x73,155,0,11}
       panes:
-        - # empty
         - vim
+        - # empty
