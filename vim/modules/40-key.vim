@@ -1,15 +1,26 @@
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
 let mapleader = "\<Space>"
 let maplocalleader = "\\"
 
-nnoremap <S-Enter> O<esc>j
+nnoremap ; :
+
+nnoremap <leader><CR> O<esc>j
 nnoremap <CR> o<Esc>k
 
 " FIXME: doesn't cooperate with tmux
 nnoremap <C-Tab> <C-w><C-w>
 nnoremap <C-S-Tab> <C-w>W
 
-" TODO: nnoremap <leader>ar to align selection
-" TODO: nnoremap <leader>ae to align selection by equal signs
+" TODO: nnoremap <Leader>ar to align selection
+" TODO: nnoremap <Leader>ae to align selection by equal signs
 
 inoremap <C-f> <C-o>l
 inoremap <C-b> <C-o>h
@@ -42,10 +53,25 @@ inoremap <esc> <nop>
 
 nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
 
-nnoremap <leader><C-p> :CtrlPTag<cr>
-nnoremap <silent> <leader><C-t> :TagbarToggle<cr>
+nnoremap <Leader><C-p> :CtrlPTag<cr>
+nnoremap <silent> <Leader><C-t> :TagbarToggle<cr>
 
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <Leader>sv :source $MYVIMRC<cr>
 
-nnoremap <leader>w :w<cr>
-nnoremap <leader>pwd :pwd<cr>
+nnoremap <Leader>w :w<cr>
+nnoremap <Leader>q :q<cr>
+nnoremap <Leader>pwd :pwd<cr>
+
+nnoremap <Leader><Leader> <c-^> " alternate between last two files
+
+nmap <Leader>1 <Plug>AirlineSelectTab1
+nmap <Leader>2 <Plug>AirlineSelectTab2
+nmap <Leader>3 <Plug>AirlineSelectTab3
+nmap <Leader>4 <Plug>AirlineSelectTab4
+nmap <Leader>5 <Plug>AirlineSelectTab5
+nmap <Leader>6 <Plug>AirlineSelectTab6
+nmap <Leader>7 <Plug>AirlineSelectTab7
+nmap <Leader>8 <Plug>AirlineSelectTab8
+nmap <Leader>9 <Plug>AirlineSelectTab9
+
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
