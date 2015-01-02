@@ -93,7 +93,10 @@ alias ta="task add"
 alias news="newsbeuter"
 
 alias tran="transmission-remote"
+alias trand="transmission-daemon"
 alias tranc="transmission-remote-cli"
+
+alias grep="grep -E" # always use extended regex
 
 unset GREP_OPTIONS
 
