@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+FONT="Terminus:8"
+
+echo "$USER@$(uname -n)"
+
+if [ -n "$BLOCK_BUTTON" ]; then
+  output=$(archey)
+
+  NUMLINES=$(echo "$output"  | wc -l)
+
+  echo "$output" | dzen2 \
+    -x $BLOCK_X \
+    -y 2 \
+    -w 700 \
+    -l $NUMLINES \
+    -p 3 \
+    -e "onstart=uncollapse,hide" \
+    -fn $FONT \
+    -fg "#7d73ed"
+fi
