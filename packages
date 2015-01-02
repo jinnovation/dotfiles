@@ -5,6 +5,7 @@ tmux
 rxvt-unicode
 unclutter
 dzen2
+sysstat
 
 # AUR
 i3blocks
