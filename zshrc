@@ -75,26 +75,7 @@ colors
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-alias be='bundle exec'
-alias bi='bundle install'
-alias gs='git status'
-alias nethack-online='telnet nethack.alt.org'
-
-alias pacman='sudo pacman'
-alias fortune='fortune -a'
-alias open='xdg-open'
-
-alias t="task"
-alias ts="task synchronize"
-alias ta="task add"
-
-alias news="newsbeuter"
-
-alias tran="transmission-remote"
-alias trand="transmission-daemon"
-alias tranc="transmission-remote-cli"
-
-alias grep="grep -E" # always use extended regex
+source $HOME/.aliases
 
 unset GREP_OPTIONS
 

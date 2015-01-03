@@ -1,0 +1,24 @@
+alias be='bundle exec'
+alias bi='bundle install'
+alias gs='git status'
+alias nethack-online='telnet nethack.alt.org'
+
+alias pacman='sudo pacman'
+alias fortune='fortune -a'
+alias open='xdg-open'
+
+# Taskwarrior 
+alias t="task"
+alias ts="task synchronize"
+alias ta="task add"
+alias ma="task add project:Movies"
+
+alias news="newsbeuter"
+
+#  Transmission
+alias tran="transmission-remote"
+alias trand="transmission-daemon"
+alias tranc="transmission-remote-cli"
+
+alias grep="grep -E" # always use extended regex
+
