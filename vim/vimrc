@@ -16,6 +16,9 @@ set splitright
 set colorcolumn=80
 set number
 set textwidth=80
+set winwidth=84
+" set winheight=30
+" set winminheight=5
 
 " editing
 set expandtab
@@ -28,12 +31,14 @@ set cursorline
 
 set shortmess+=I " don't display intro message on Vim start
 
-set autochdir
-
 set visualbell
 
 set autoindent
 set laststatus=2 " always display status line
+
+set autoread "  if file changed outside vim, auto-reload w/o question
+
+set gdefault
 
 syntax on " enable syntax highlighting
 
