@@ -5,9 +5,9 @@ export VISUAL=/usr/bin/vim
 ZSH=/usr/share/oh-my-zsh/
 
 ZSH_THEME="daveverwer"
+plugins=(archlinux git-extras colored-man grep)
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="false" # case-insensitive auto-completion 
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
@@ -36,8 +36,6 @@ DISABLE_AUTO_UPDATE="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-
-plugins=(archlinux git-extras colored-man grep)
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
