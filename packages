@@ -1,11 +1,25 @@
-nethack
-vim
-git
-tmux
-rxvt-unicode
-unclutter
-dzen2
+# system
 sysstat
 
+# games
+nethack
+dwarffortress # FIXME
+
+# productivity
+emacs
+vim
+git
+rxvt-unicode
+tmux
+taskwarrior # FIXME
+zsh
+
+# environment
+unclutter
+dzen2
+i3 # FIXME
+zathura # FIXME
+
 # AUR
+yaourt
 i3blocks
