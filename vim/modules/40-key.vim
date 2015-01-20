@@ -24,6 +24,7 @@ nnoremap <C-S-Tab> <C-w>W
 
 inoremap <C-f> <C-o>l
 inoremap <C-b> <C-o>h
+inoremap <M-b> <C-o>b
 
 noremap <Leader>bk :call BKill()<CR>
 
@@ -49,7 +50,6 @@ map <Leader>h <Plug>(easymotion-linebackward)
 
 map H 0
 map L $
-inoremap <esc> <nop>
 
 nnoremap <silent> <Leader>rtw :call TrimWhiteSpace()<CR>
 
@@ -62,7 +62,8 @@ nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr>
 nnoremap <Leader>pwd :pwd<cr>
 
-nnoremap <Leader><Leader> <c-^> " alternate between last two files
+ " alternate between last two files
+nnoremap <Leader><Leader> <c-^>
 
 nmap <Leader>1 <Plug>AirlineSelectTab1
 nmap <Leader>2 <Plug>AirlineSelectTab2
@@ -74,4 +75,12 @@ nmap <Leader>7 <Plug>AirlineSelectTab7
 nmap <Leader>8 <Plug>AirlineSelectTab8
 nmap <Leader>9 <Plug>AirlineSelectTab9
 
-nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+" indent/align entire document
+nnoremap <Leader>== gg=G``
+
+imap <localleader>cI <Plug>NERDCommenterInsert
+
+nnoremap <leader><f2> :CottidieTip<cr>
+
+nnoremap <leader>csf :call CSFullMark()<CR>
+nnoremap <leader>css :call CSSignature()<CR>
