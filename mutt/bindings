@@ -13,3 +13,7 @@ bind pager G bottom
 bind pager R group-reply
 
 bind attach <return> view-mailcap
+
+macro index \e1 ":set from=jjin082693@gmail.com<enter>" "switch to jjin082693@gmail.com"
+macro index \e2 ":set from=jonathan@jjin.me<enter>" "switch to jonathan@jjin.me"
+macro index \e3 ":set from=jjin082693@uchicago.edu<enter>" "switch to jjin082693@uchicago.edu"
