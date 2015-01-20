@@ -2,8 +2,10 @@
 alias t="task"
 alias ts="task synchronize"
 alias ta="task add"
-alias ma="task add project:Movies"
-alias tm="task project:Movies"
+alias ma="task add project:movies"
+alias tm="task project:movies"
+alias hw="task +school"
+alias hwa="task add +school"
 
 # Newsbeuter
 alias news="newsbeuter"
@@ -19,7 +21,8 @@ alias grep="grep -E" # always use extended regex
 alias be='bundle exec'
 alias bi='bundle install'
 alias gs='git status'
-alias nethack-online='telnet nethack.alt.org'
+alias nethacko='nethack.alt.org'
+alias crawlo='ssh -i .ssh/cao_key joshua@crawl.akrasiac.org'
 
 alias pacman='sudo pacman'
 alias fortune='fortune -a'
