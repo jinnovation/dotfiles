@@ -4,6 +4,7 @@ http://ny.curbed.com/atom.xml "real estate" entertainment
 http://www.avclub.com/feed/rss/ "movies and tv"
 http://fivethirtyeight.com/all/feed
 http://www.tor.com/rss/frontpage_full literature "~Tor.com"
+http://longform.org/feed.rss
 http://feeds.feedburner.com/themillionsblog/fedw literature
 
 http://feeds.bbci.co.uk/news/world/rss.xml news
@@ -15,6 +16,7 @@ http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml news
 http://online.wsj.com/xml/rss/3_7085.xml news
 http://online.wsj.com/xml/rss/3_7014.xml news
 http://online.wsj.com/xml/rss/3_7455.xml news
+http://fortune.com/feed/ news "~Fortune"
 
 http://rss.escapistmagazine.com/news/0.xml entertainment "~The Escapist"
 http://rss.escapistmagazine.com/videos/list/1.xml entertainment "video games" "~The Escapist: Zero Punctuation"
@@ -26,18 +28,19 @@ http://feeds.feedburner.com/thisdeveloperslife software
 http://feeds.feedburner.com/oreilly/news software
 http://www.joelonsoftware.com/rss.xml software
 http://onethingwell.org/rss software
-
-http://gdata.youtube.com/feeds/api/users/foodwishes/uploads food "~Food Wishes"
-
+http://pandodaily.com.feedsportal.com/c/35141/f/650422/index.rss tech politics
+https://medium.com/feed/backchannel
 http://feeds.feedburner.com/laptopmag tech "~Laptop Mag"
-http://www.engadget.com/rss.xml tech "~Engadget"
 http://recode.net/feed/ tech
-http://recode.net/category/reviews/feed/
+http://recode.net/category/reviews/feed/ tech
 http://feeds.feedburner.com/AndroidPolice tech android "~Android Police"
+http://bits.blogs.nytimes.com/feed/ tech "~New York Times: Bits"
+
 http://www.eater.com/rss/index.xml food "~Eater"
 http://ny.eater.com/rss/index.xml food NY "~Eater NY"
 
 http://notwithoutsalt.com/feed/ food
+http://feeds.feedburner.com/blogspot/sBff food "~Food Wishes"
 http://feeds.feedburner.com/nymag/grubstreet food NY
 http://feeds.feedburner.com/nymag/Food food NY
 http://feeds.feedburner.com/seriouseatsfeaturesvideos food
