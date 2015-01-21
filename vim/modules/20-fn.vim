@@ -15,10 +15,5 @@ function! TrimWhiteSpace()
     %s/\s\+$//e
 endfunction
 
-function! CSFullMark()
-  %s/-\/\s\?\([0-9]*\)/\1\/\1/ge
-endfunction
-
 function! CSSignature()
-  %s/GRADER'S_NAME_HERE/Jonathan Jin/e
 endfunction

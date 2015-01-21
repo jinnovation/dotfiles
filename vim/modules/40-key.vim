@@ -82,5 +82,6 @@ imap <localleader>cI <Plug>NERDCommenterInsert
 
 nnoremap <leader><f2> :CottidieTip<cr>
 
-nnoremap <leader>csf :call CSFullMark()<CR>
+nnoremap <leader>csf :/=\+\s\+evaluation/,$s/\/\s\?\([0-9]\+\)/\1\/\1/g<cr>
 nnoremap <leader>css :call CSSignature()<CR>
+nnoremap <leader>css :%s/GRADER'S_NAME_HERE/Jonathan Jin/<cr>
