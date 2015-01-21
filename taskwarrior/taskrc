@@ -22,3 +22,12 @@ taskd.credentials=FreeCinc\/freecinc_3482e9c4\/ee33c535-bff4-4458-8d3f-f2d232f7a
 
 report.next.columns=id,project,priority,due,start.active,urgency,description,tags
 report.next.labels=ID,Proj,Pri,Due,A,Urg,Description,Tags
+
+urgency.user.project.watch.coefficient=-10
+urgency.user.project.reading.coefficient=-10
+urgency.user.tag.school.coefficient=10
+
+dateformat=m/d/Y
+dateformat.edit=m/d/Y H:N:S
+dateformat.holiday=MDY
+dateformat.info=m/d/Y H:N:S
