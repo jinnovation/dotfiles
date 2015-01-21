@@ -2,24 +2,29 @@
 sysstat
 
 # games
-nethack
-dwarffortress # FIXME
+nethack       # the quintessential dungeon-crawler
+dwarffortress # masochism: the game
+stone-soup
+
+# editors
+emacs
+vim # porque no los dos 
 
 # productivity
-emacs
-vim
 git
 rxvt-unicode
 tmux
-taskwarrior # FIXME
+task # taskwarrior: task management 
 zsh
+oh-my-zsh
 
 # environment
-unclutter
-dzen2
-i3 # FIXME
-zathura # FIXME
+unclutter # hides cursor on inactivity
+dzen2     # general purpose messaging, notification and menuing program for X11
+i3-wm     # i3 window manager
+zathura   # minimalistic PDF viewer
 
 # AUR
 yaourt
-i3blocks
+i3blocks # better bar library for i3wm 
+silver-searcher-git # ack on steroids 
