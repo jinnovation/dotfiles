@@ -7,6 +7,8 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'tpope/vim-fugitive' " Git wrapper
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-airline'
 Plug 'Raimondi/delimitMate'
@@ -28,4 +30,5 @@ Plug 'mileszs/ack.vim'
 
 Plug 'glts/vim-cottidie' " brings Vim tips to messages area
 
+Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
