@@ -1,9 +1,3 @@
-set $wspace1 "1"
-set $wspace2 "2"
-set $wspace3 "3"
-set $wspace4 "4"
-set $wspace5 "5"
-
 # color scheme: http://www.colourlovers.com/palette/35258/The_Electric_Co.
 set $color1 #2ebaff
 set $color2 #13fffc
@@ -22,7 +16,7 @@ set $term urxvt
 # chose a FreeType font, such as:
 font pango:Terminus, FontAwesome 10
 
-# use Mouse+Mod4 to drag floating windows to their wanted position
+# use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier Mod4
 
 # start a terminal
@@ -39,6 +33,7 @@ bindsym Mod4+Shift+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 bindsym Mod4+d exec --no-startup-id i3-dmenu-desktop
+bindsym Mod4+c exec google-chrome-beta --show-app-list
 
 bindsym Control+Shift+Escape exec $term -e htop
 
@@ -91,19 +86,17 @@ bindsym Mod4+a focus parent
 # focus the child container
 #bindsym Mod4+d focus child
 
-# Workspace names
-# Workspace $wspace1 output LVDS-1
-# Workspace $wspace2 output LVDS-1
-# Workspace $wspace3 output LVDS-1
-# Workspace $wspace4 output LVDS-1
-# Workspace $wspace5 output LVDS-1
-
 # switch to workspace
-bindsym Mod4+1 workspace $wspace1
-bindsym Mod4+2 workspace $wspace2
-bindsym Mod4+3 workspace $wspace3
-bindsym Mod4+4 workspace $wspace4
-bindsym Mod4+5 workspace $wspace5
+bindsym Mod4+1 workspace 1
+bindsym Mod4+2 workspace 2
+bindsym Mod4+3 workspace 3
+bindsym Mod4+4 workspace 4
+bindsym Mod4+5 workspace 5
+bindsym Mod4+Control+1 workspace 6
+bindsym Mod4+Control+2 workspace 7
+bindsym Mod4+Control+3 workspace 8
+bindsym Mod4+Control+4 workspace 9
+bindsym Mod4+Control+5 workspace 10
 bindsym Mod4+6 workspace 6
 bindsym Mod4+7 workspace 7
 bindsym Mod4+8 workspace 8
@@ -111,11 +104,16 @@ bindsym Mod4+9 workspace 9
 bindsym Mod4+0 workspace 10
 
 # move focused container to workspace
-bindsym Mod4+Shift+1 move container to workspace $wspace1
-bindsym Mod4+Shift+2 move container to workspace $wspace2
-bindsym Mod4+Shift+3 move container to workspace $wspace3
-bindsym Mod4+Shift+4 move container to workspace $wspace4
-bindsym Mod4+Shift+5 move container to workspace $wspace5
+bindsym Mod4+Shift+1 move container to workspace 1
+bindsym Mod4+Shift+2 move container to workspace 2
+bindsym Mod4+Shift+3 move container to workspace 3
+bindsym Mod4+Shift+4 move container to workspace 4
+bindsym Mod4+Shift+5 move container to workspace 5
+bindsym Mod4+Shift+Control+1 move container to workspace 6
+bindsym Mod4+Shift+Control+2 move container to workspace 7
+bindsym Mod4+Shift+Control+3 move container to workspace 8
+bindsym Mod4+Shift+Control+4 move container to workspace 9
+bindsym Mod4+Shift+Control+5 move container to workspace 10
 bindsym Mod4+Shift+6 move container to workspace 6
 bindsym Mod4+Shift+7 move container to workspace 7
 bindsym Mod4+Shift+8 move container to workspace 8
@@ -167,15 +165,6 @@ bar {
     }
 }
 
-bar {
-  position bottom
-  tray_output none
-  workspace_buttons no
-  binding_mode_indicator no
-
-  status_command /home/jjin/.config/conky-i3bar-rss
-}
-
 new_float none
 new_window pixel 1
 
@@ -194,5 +183,8 @@ for_window [class="Transmission"] floating enable
 for_window [class="Steam"] floating enable
 for_window [class="Steam" title="^Steam$"] floating disable
 for_window [class="Thunar" title="^File Operation Progress$"] floating enable
+
+# Google Chrome App Launcher
+for_window [instance="^chrome_app_list$"] floating enable
 
 workspace_auto_back_and_forth yes
