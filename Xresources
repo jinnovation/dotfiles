@@ -9,7 +9,7 @@
 
 ! Use the specified colour as the windows background colour [default White];
 URxvt*depth: 32
-URxvt*background: rgba:0000/0000/0000/7777
+URxvt*background: rgba:0000/0000/0000/bbbb
 ! Use the specified colour as the windows foreground colour [default Black];
 URxvt*foreground: #B2B2B2
 
