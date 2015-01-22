@@ -25,6 +25,7 @@ windows:
         - mutt
         - newsbeuter
         - htop
+        - weechat
         - # empty
   - editor:
       layout: c108,239x73,0,0{154x73,0,0,10,84x73,155,0,11}

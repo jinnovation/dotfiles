@@ -51,8 +51,6 @@ set sort = reverse-threads
 set sort_aux = last-date-received
 
 set query_command="goobook query '%s'"
-macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
-bind editor <Tab> complete-query
 
 set mailcap_path = ~/.mutt/mailcap
 auto_view text/html

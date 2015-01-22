@@ -27,18 +27,3 @@ FOOTERHEIGHT=1
 
 $CMD $TASKSETTINGS 2>/dev/null | tail -n +$HEADERHEIGHT | head -n $FOOTERHEIGHT
 
-if [ -n "$BLOCK_BUTTON" ]; then
-  tasks=$($CMD | head -n -2)
-
-  NUMLINES=$(echo "$tasks" | wc -l)
-
-  echo "$tasks" | dzen2 \
-    -x $BLOCK_X \
-    -y 2 \
-    -w 700 \
-    -l $NUMLINES \
-    -p 3 \
-    -e "onstart=uncollapse,hide" \
-    -fn $FONT \
-    -fg "#d6a344"
-fi
