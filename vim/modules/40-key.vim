@@ -28,8 +28,10 @@ inoremap <M-b> <C-o>b
 
 noremap <Leader>bk :call BKill()<CR>
 
+" buffer controls
 noremap <Leader>bn :bn<CR>
 noremap <Leader>bd :bd<CR>
+" TODO: <Leader>bK killall buffers
 
 noremap <Leader>gb :Gblame<CR>
 noremap <Leader>gs :Gstatus<CR>
@@ -82,6 +84,7 @@ imap <localleader>cI <Plug>NERDCommenterInsert
 
 nnoremap <leader><f2> :CottidieTip<cr>
 
-nnoremap <leader>csf :/=\+\s\+evaluation/,$s/\/\s\?\([0-9]\+\)/\1\/\1/g<cr>
+nnoremap <leader>csf :/=\+\s\+evaluation/,$s/\s\/\s\?\([0-9]\+\)/\1\/\1/g<cr>
+nnoremap <leader>csz :/=\+\s\+evaluation/,$s/\s\/\s\?\([0-9]\+\)/0\/\1/g<cr>
 nnoremap <leader>css :call CSSignature()<CR>
 nnoremap <leader>css :%s/GRADER'S_NAME_HERE/Jonathan Jin/<cr>
