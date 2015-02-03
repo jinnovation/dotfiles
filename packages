@@ -1,16 +1,16 @@
-                    # system
+# system
 sysstat
 
-                    # games
+# games
 nethack             # the quintessential dungeon-crawler
 dwarffortress       # masochism: the game
 stone-soup
 
-                    # editors
+# editors
 emacs
 vim                 # porque no los dos
 
-                    # productivity
+# productivity
 git
 rxvt-unicode
 tmux
@@ -18,12 +18,12 @@ task                # taskwarrior: task management
 zsh
 oh-my-zsh
 
-                    # environment
+# environment
 unclutter           # hides cursor on inactivity
 i3-wm               # i3 window manager
 zathura             # minimalistic PDF viewer
 
-                    # AUR
+# AUR
 yaourt
 i3blocks            # better bar library for i3wm
 silver-searcher-git # ack on steroids
