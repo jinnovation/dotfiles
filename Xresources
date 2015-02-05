@@ -250,7 +250,7 @@ URxvt*cursorBlink: true
 ! URxvt*searchable-scrollback: keysym
 
 ! Specifies the program to be started with a URL argument. Used by the
-URxvt*url-launcher: google-chrome-beta
+URxvt*url-launcher: chromium
 
 ! Compile frills: Sets the WM_TRANSIENT_FOR property to the given window id.
 ! URxvt*transient-for: windowid
