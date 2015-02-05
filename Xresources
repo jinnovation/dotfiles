@@ -68,7 +68,7 @@ URxvt*cursorColor2: #000000
 
 ! Select the fonts to be used. This is a comma separated list of font names that
 ! URxvt*font: xft:Droid Sans Mono:size=8:antialias=true
-URxvt*font: xft:Terminus:size=10:antialias=true
+URxvt*font: xft:Terminus:size=08:antialias=true
 !-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
 
 ! URxvt*boldFont: fontlist

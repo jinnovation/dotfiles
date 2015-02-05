@@ -14,7 +14,7 @@ set $term urxvt
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Terminus, FontAwesome 10
+font pango:Terminus, FontAwesome 08
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier Mod4
@@ -32,7 +32,7 @@ bindsym Mod4+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym Mod4+d exec --no-startup-id i3-dmenu-desktop
+bindsym Mod4+Escape exec --no-startup-id i3-dmenu-desktop
 bindsym Mod4+c exec google-chrome-beta --show-app-list
 
 bindsym Control+Shift+Escape exec $term -e htop

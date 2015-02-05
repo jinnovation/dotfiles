@@ -80,3 +80,6 @@ source $HOME/.aliases
 unset GREP_OPTIONS
 
 export DISABLE_AUTO_TITLE=true
+export BGDIR=~/Dropbox/Images/Wallpapers
+
+export BROWSER="chromium"
