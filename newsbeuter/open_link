@@ -4,5 +4,5 @@ if echo "$1" | grep -e jpg$ -e jpeg$ -e gif$ -e png$
 then
   feh "$1"
 else
-  $BROWSER "$1"
+  chromium "$1"
 fi
