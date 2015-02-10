@@ -19,9 +19,9 @@ http://online.wsj.com/xml/rss/3_7014.xml news
 http://online.wsj.com/xml/rss/3_7455.xml news
 http://fortune.com/feed/ news "~Fortune"
 
+http://www.engadget.com/tag/@gaming/rss.xml entertainment "~Joystiq x Engadget"
 http://rss.escapistmagazine.com/news/0.xml entertainment "~The Escapist"
 http://rss.escapistmagazine.com/videos/list/1.xml entertainment "video games" "~The Escapist: Zero Punctuation"
-http://www.joystiq.com/rss.xml entertainment "~Joystiq"
 http://feeds.feedburner.com/RockPaperShotgun entertainment
 
 http://feeds.feedburner.com/codinghorror software
