@@ -1,3 +1,5 @@
+[![License MIT](http://img.shields.io/:license-mit-blue.svg)](http://jinnovation.mit-license.org/)
+[![Gratipay](http://img.shields.io/gratipay/jinnovation.svg)](https://gratipay.com/jinnovation/)
 [![](https://travis-ci.org/jinnovation/dotfiles.svg)](https://travis-ci.org/jinnovation/dotfiles)
 
 Consolidating all of the dotfiles for my GNU/Linux environment into one central
