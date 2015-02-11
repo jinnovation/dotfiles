@@ -10,3 +10,14 @@
     ~/.emacs.d/prefs:
       path: emacs/prefs/
       create: true
+    ~/.zathurarc: zathurarc
+    ~/.Xresources: Xresources
+    ~/.tmux.conf: tmux.conf
+    ~/.taskrc: taskwarrior/taskrc
+    ~/.nethackrc: nethackrc
+    ~/.i3blocks.conf: i3/i3blocks.conf
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
+    ~/.bashrc: bashrc
+    ~/.signature: mutt/signature
+    ~/.mutt: mutt/
