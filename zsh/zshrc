@@ -84,3 +84,7 @@ export DISABLE_AUTO_TITLE=true
 export BGDIR=~/Dropbox/Images/Wallpapers
 
 export BROWSER="chromium"
+
+if [ -f ~/.zshrc_local ]; then
+    source ~/.zshrc_local
+fi

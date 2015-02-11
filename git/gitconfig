@@ -28,3 +28,5 @@
 [pretty]
 	oneline-author = "%C(auto)%h%d %Cblue%an %Creset%s"
 
+[include]
+	path = ~/.gitconfig_local
