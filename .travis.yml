@@ -1,1 +1,4 @@
+install:
+  - sudo apt-get install emacs
+  - sudo apt-get install vim
 script: ./install.sh
