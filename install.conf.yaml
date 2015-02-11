@@ -18,7 +18,9 @@
     ~/.i3blocks.conf: i3/i3blocks.conf
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-    ~/.bashrc: bashrc
+    ~/.bashrc:
+      path: bashrc
+      force: true
     ~/.signature: mutt/signature
     ~/.mutt: mutt/
 - shell:
