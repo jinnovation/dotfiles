@@ -7,3 +7,6 @@
     ~/.gvimrc: vim/gvimrc
     ~/.vimrc_linux: vim/vimrc_linux
     ~/.emacs: emacs/emacs
+    ~/.emacs.d/prefs:
+      path: emacs/prefs/
+      create: true
