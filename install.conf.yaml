@@ -1,5 +1,7 @@
 - link:
-    ~/.zshrc: zsh/zshrc
+    ~/.zshrc:
+      path: zsh/zshrc
+      force: true
     ~/.aliases: zsh/aliases
     ~/.vimrc: vim/vimrc
     ~/.gvimrc: vim/gvimrc
