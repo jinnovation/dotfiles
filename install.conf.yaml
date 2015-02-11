@@ -21,3 +21,5 @@
     ~/.bashrc: bashrc
     ~/.signature: mutt/signature
     ~/.mutt: mutt/
+- shell:
+    - emacs -f package-install-all-required
