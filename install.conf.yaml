@@ -25,3 +25,13 @@
       force: true
     ~/.signature: mutt/signature
     ~/.mutt: mutt/
+    ~/compton.conf: compton.conf
+    ~/.config/ranger/commands.py:
+      path: ranger/commands.py
+      create: true
+    ~/.config/ranger/rc.conf:
+      path: ranger/rc.conf
+      create: true
+    ~/.config/ranger/rifle.conf:
+      path: ranger/rifle.conf
+      create: true
