@@ -16,12 +16,12 @@
     ~/.taskrc: taskwarrior/taskrc
     ~/.nethackrc: nethackrc
     ~/.i3blocks.conf: i3/i3blocks.conf
-    ~/.gitconfig: git/gitconfig
+    ~/.gitconfig:
+      path: git/gitconfig
+      force: true
     ~/.gitignore_global: git/gitignore_global
     ~/.bashrc:
       path: bashrc
       force: true
     ~/.signature: mutt/signature
     ~/.mutt: mutt/
-- shell:
-    - emacs -f package-install-all-required
