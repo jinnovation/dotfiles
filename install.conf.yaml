@@ -16,6 +16,8 @@
     ~/.taskrc: taskwarrior/taskrc
     ~/.nethackrc: nethackrc
     ~/.i3blocks.conf: i3/i3blocks.conf
+    ~/.i3/config: i3/config
+    ~/.i3/scripts: i3/scripts/
     ~/.gitconfig:
       path: git/gitconfig
       force: true
