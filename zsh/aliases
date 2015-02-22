@@ -27,3 +27,5 @@ alias crawlo='ssh -i .ssh/cao_key joshua@crawl.akrasiac.org'
 alias pacman='sudo pacman'
 alias fortune='fortune -a'
 alias open='xdg-open'
+
+alias python='ipython'
