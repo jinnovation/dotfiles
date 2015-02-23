@@ -158,10 +158,10 @@ bar {
         separator  #444444
 
     	# class		   border  backgr. text
-        focused_workspace  $color1 $color5 #dddddd
-        active_workspace   #333333 #5f676a #dddddd
-        inactive_workspace #333333 #222222 #888888
-        urgent_workspace   #2f343a #900000 #dddddd
+        focused_workspace  #000000 #000000 #dddddd
+        active_workspace   #000000 #000000 #ffffff
+        inactive_workspace #000000 #000000 #333333
+        urgent_workspace   #000000 #000000 #900000
     }
 }
 
