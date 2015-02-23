@@ -5,6 +5,11 @@ set $color3 #7d73ed
 set $color4 #4fdaef
 set $color5 #4d7de9
 
+
+set $workspace1 1:
+set $workspace2 2:
+set $workspace3 3:
+
 set $term urxvt
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -84,50 +89,34 @@ bindsym Mod4+Shift+space floating toggle
 bindsym Mod4+a focus parent
 
 # focus the child container
-#bindsym Mod4+d focus child
+bindsym Mod4+d focus child
 
-# switch to workspace
-bindsym Mod4+1 workspace 1
-bindsym Mod4+2 workspace 2
-bindsym Mod4+3 workspace 3
+bindsym Mod4+1 workspace $workspace1
+bindsym Mod4+2 workspace $workspace2
+bindsym Mod4+3 workspace $workspace3
 bindsym Mod4+4 workspace 4
 bindsym Mod4+5 workspace 5
-bindsym Mod4+Control+1 workspace 6
-bindsym Mod4+Control+2 workspace 7
-bindsym Mod4+Control+3 workspace 8
-bindsym Mod4+Control+4 workspace 9
-bindsym Mod4+Control+5 workspace 10
 bindsym Mod4+6 workspace 6
 bindsym Mod4+7 workspace 7
 bindsym Mod4+8 workspace 8
 bindsym Mod4+9 workspace 9
 bindsym Mod4+0 workspace 10
 
-# move focused container to workspace
-bindsym Mod4+Shift+1 move container to workspace 1
-bindsym Mod4+Shift+2 move container to workspace 2
-bindsym Mod4+Shift+3 move container to workspace 3
+bindsym Mod4+Shift+1 move container to workspace $workspace1
+bindsym Mod4+Shift+2 move container to workspace $workspace2
+bindsym Mod4+Shift+3 move container to workspace $workspace3
 bindsym Mod4+Shift+4 move container to workspace 4
 bindsym Mod4+Shift+5 move container to workspace 5
-bindsym Mod4+Shift+Control+1 move container to workspace 6
-bindsym Mod4+Shift+Control+2 move container to workspace 7
-bindsym Mod4+Shift+Control+3 move container to workspace 8
-bindsym Mod4+Shift+Control+4 move container to workspace 9
-bindsym Mod4+Shift+Control+5 move container to workspace 10
 bindsym Mod4+Shift+6 move container to workspace 6
 bindsym Mod4+Shift+7 move container to workspace 7
 bindsym Mod4+Shift+8 move container to workspace 8
 bindsym Mod4+Shift+9 move container to workspace 9
 bindsym Mod4+Shift+0 move container to workspace 10
 
-# reload the configuration file
 bindsym Mod4+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod4+Shift+r restart
-# exit i3 (logs you out of your X session)
-# bindsym Mod4+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-mode "resize" {
+mode "" {
         bindsym n           resize shrink width 2 px or 2 ppt
         bindsym e           resize grow height 2 px or 2 ppt
         bindsym i           resize shrink height 2 px or 2 ppt
@@ -142,7 +131,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym Mod4+r mode "resize"
+bindsym Mod4+r mode ""
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -151,6 +140,7 @@ bar {
     position top
     status_command i3blocks
     mode dock
+    strip_workspace_numbers yes
 
     colors {
         background #000000
@@ -160,7 +150,7 @@ bar {
     	# class		   border  backgr. text
         focused_workspace  #000000 #000000 #dddddd
         active_workspace   #000000 #000000 #ffffff
-        inactive_workspace #000000 #000000 #333333
+        inactive_workspace #000000 #000000 #666666
         urgent_workspace   #000000 #000000 #900000
     }
 }
@@ -173,7 +163,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym Print exec scrot
 
 # class                 border  backgr. text    indicator
-client.focused          $color5 $color5 #dddddd $color2
+client.focused          $000000 $000000 #dddddd $color2
 client.focused_inactive #333333 #5f676a #dddddd #484e50
 client.unfocused        #333333 $222222 #888888 #292d2e
 client.urgent           #2f343a #222222 #dddddd $color2
@@ -187,6 +177,10 @@ for_window [class="Thunar" title="^File Operation Progress$"] floating enable
 # Google Chrome App Launcher
 for_window [instance="^chrom(e|ium)_app_list$"] floating enable
 for_window [title="Mini Player$"] floating enable
+
+assign [window_role="browser"] $workspace1
+assign [class="emacs"] $workspace2
+assign [class="urxvt"] $workspace3
 
 workspace_auto_back_and_forth yes
 
