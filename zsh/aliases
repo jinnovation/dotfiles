@@ -29,3 +29,5 @@ alias fortune='fortune -a'
 alias open='xdg-open'
 
 alias python='ipython'
+
+alias rw='ranwall'
