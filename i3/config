@@ -49,10 +49,10 @@ bindsym Mod4+i focus up
 bindsym Mod4+o focus right
 
 # alternatively, you can use the cursor keys:
-bindsym Mod4+Left focus left
-bindsym Mod4+Down focus down
-bindsym Mod4+Up focus up
-bindsym Mod4+Right focus right
+bindsym Mod4+Left move workspace to output left
+bindsym Mod4+Down move workspace to output down
+bindsym Mod4+Right move workspace to output right
+bindsym Mod4+Up move workspace to output up
 
 # move focused window
 bindsym Mod4+Shift+n move left
