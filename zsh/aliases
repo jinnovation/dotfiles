@@ -29,5 +29,7 @@ alias fortune='fortune -a'
 alias open='xdg-open'
 
 alias python='ipython'
-
+alias ranwall='feh --randomize --bg-fill --no-fehbg $BGDIR'
 alias rw='ranwall'
+
+alias R='R --quiet'
