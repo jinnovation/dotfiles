@@ -76,15 +76,23 @@ colors
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source $HOME/.aliases
+if [ -f $HOME/.aliases ]; then
+    source $HOME/.aliases
+fi
 
 unset GREP_OPTIONS
 
 export DISABLE_AUTO_TITLE=true
 export BGDIR=~/Dropbox/Images/Wallpapers
+export MAILDIR=~/mail
 
 export BROWSER="chromium"
 
 if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
 fi
+
+export NPM_PACKAGES=${HOME}/.npm-packages
+export NODE_PATH=$NPM_PACKAGES/lib/node_modules:$NODE_PATH
+export PATH=$NPM_PACKAGES/bin:$PATH
+
