@@ -67,7 +67,6 @@ URxvt*cursorColor2: #000000
 ! URxvt*borderColor: colour
 
 ! Select the fonts to be used. This is a comma separated list of font names that
-! URxvt*font: xft:Droid Sans Mono:size=8:antialias=true
 URxvt*font: xft:Terminus:size=08:antialias=true
 !-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
 
@@ -264,15 +263,6 @@ URxvt*url-launcher: chromium
 ! Turn on/off ISO 14755 5.2 mode (default enabled).
  URxvt*iso14755_52: false
 
-! vtwheel: mouse scrollwheel support
-! font-size: allows change font size on fly
-URxvt*perl-ext-common: default, matcher, fullscreen, vtwheel, font-size
-
-URxvt*keysym.C-Up:     perl:font-size:increase
-URxvt*keysym.C-Down:   perl:font-size:decrease
-URxvt*keysym.C-S-Up:   perl:font-size:incglobal
-URxvt*keysym.C-S-Down: perl:font-size:decglobal
-
 ! Gotham theme
  *.foreground:   #98d1ce
 ! *.background:   #0a0f14
@@ -312,3 +302,8 @@ Emacs.background: #000000
 Emacs.mode-line.attributeForeground: #000000
 Emacs.mode-line.attributeBackground: #000000
 Emacs.mode-line.attributeBox: (:line-width 1 :color "#000000")
+
+rofi.font: Terminus 8
+rofi.bg: argb:000a0f14
+rofi.fg: argb:ff98d1ce
+rofi.hlbg: argb:00586E75
