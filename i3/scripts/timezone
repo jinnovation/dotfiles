@@ -11,8 +11,8 @@
 #     interval=5
 
 TIMES = [
-  { label: "Chicago", zone: "America/Chicago" },
   { label: "New York", zone: "America/New_York" },
+  { label: "Chicago", zone: "America/Chicago" },
   { label: "China", zone: "Asia/Hong_Kong" }
 ]
 
