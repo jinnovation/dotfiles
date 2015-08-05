@@ -9,6 +9,7 @@ tags
 !tags/
 gtags.files
 GTAGS
+GSYMS
 GRTAGS
 GPATH
 cscope.files
