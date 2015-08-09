@@ -25,8 +25,7 @@ font pango:Terminus, FontAwesome 08
 floating_modifier Mod4
 
 # start a terminal
-bindsym Mod4+Return exec $term -e tmuxinator gen
-bindsym Mod4+Shift+Return exec $term
+bindsym Mod4+Return exec $term
 
 # kill focused window
 bindsym Mod4+Shift+q kill
@@ -140,7 +139,7 @@ bar {
     i3bar_command i3bar
     position top
     status_command i3blocks
-    mode dock
+    mode hide
     strip_workspace_numbers yes
 
     colors {
