@@ -303,6 +303,14 @@ Emacs.mode-line.attributeForeground: #000000
 Emacs.mode-line.attributeBackground: #000000
 Emacs.mode-line.attributeBox: (:line-width 1 :color "#000000")
 
+Xft.dpi: 211
+Xft.autohint: no
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
 rofi.font: Terminus 8
 rofi.bg: argb:000a0f14
 rofi.fg: argb:ff98d1ce
