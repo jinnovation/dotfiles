@@ -158,8 +158,14 @@ bar {
 new_float none
 new_window pixel 1
 
+# TODO: extract all bindings away from being i3-exclusive
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
+bindsym XF86AudioLowerVolume exec amixer -D pulse set Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 5%+
+bindsym XF86AudioMute exec amixer -D pulse set Master toggle
+
 bindsym Print exec scrot
 
 # class                 border  backgr. text    indicator
