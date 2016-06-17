@@ -1,0 +1,9 @@
+[Unit]
+Description=Compton compositor
+
+[Service]
+ExecStart=/usr/bin/compton --config /home/jonathan/compton.conf
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=default.target

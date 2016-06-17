@@ -1,0 +1,11 @@
+[Unit]
+Description=Hide the mouse cursor on inactivity
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/unclutter -idle 2 -jitter 3
+Restart=always
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=default.target
