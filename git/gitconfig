@@ -4,9 +4,10 @@
 
 [core]
 	editor         = vim
-	autocrlf       = input
+	autocrlf       = false
 	whitespace     = trailing-space,space-before-tab
 	excludesfile   = ~/.gitignore_global
+    filemode       = false
 
 [color]
 	ui             = auto

@@ -1,4 +1,4 @@
-#!/bin/ruby
+#!/usr/bin/ruby
 #
 # Toggle timezones in i3blocks
 # Author: Vivien Didelot <vivien.didelot@gmail.com>

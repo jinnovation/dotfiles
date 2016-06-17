@@ -1,35 +1,25 @@
-# Taskwarrior
-alias t="task"
-alias ts="task synchronize"
-alias ta="task add"
-alias ma="task add project:movies"
-alias tm="task project:movies"
-alias hw="task +school"
-alias hwa="task add +school"
-
-# Newsbeuter
-alias news="newsbeuter"
-
-#  Transmission
-alias tran="transmission-remote"
-alias trand="transmission-daemon"
-alias tranc="transmission-remote-cli"
-
-# Misc
 alias grep="grep -E" # always use extended regex
 
-alias be='bundle exec'
-alias bi='bundle install'
 alias gs='git status'
 alias nethacko='nethack.alt.org'
 alias crawlo='ssh -i .ssh/cao_key joshua@crawl.akrasiac.org'
 
 alias pacman='sudo pacman'
-alias fortune='fortune -a'
+alias agi='sudo apt-get install'
+alias agu='sudo apt-get update'
+alias agU='sudo apt-get upgrade'
 alias open='xdg-open'
 
 alias python='ipython'
-alias ranwall='feh --randomize --bg-fill --no-fehbg $BGDIR'
 alias rw='ranwall'
 
-alias R='R --quiet'
+alias okvpn="sudo openconnect --juniper --no-cert-check vpn.mct360.com"
+alias okjail="ssh jonathan.dev.okcupid.com"
+
+alias pss="pass show"
+alias psc="pass -c"
+
+alias fiion="pacmd set-default-sink alsa_output.usb-FiiO_FiiO_USB_DAC-E17-01-DACE17.analog-stereo"
+alias fiioff="pacmd set-default-sink alsa_output.pci-0000_00_1b.0.analog-stereo"
+
+alias okjail="ssh -X jonathan.dev.okcupid.com"

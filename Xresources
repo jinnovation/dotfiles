@@ -229,9 +229,14 @@ URxvt*cursorBlink: true
 
 ! Compile frills: Associate string with keysym sym. The intervening resource name
 ! URxvt*keysym.sym: string
+URxvt.keysym.C-Up: font-size:increase
+URxvt.keysym.C-Down: font-size:decrease
+URxvt.keysym.C-S-Up: font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
 
 ! Comma-separated list(s) of perl extension scripts (default: "default") to use in
 ! URxvt*perl-ext: string
+URxvt.perl-ext-common: font-size
 
 ! Perl code to be evaluated when all extensions have been registered. See the
 ! URxvt*perl-eval: string
