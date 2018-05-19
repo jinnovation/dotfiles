@@ -1,8 +1,9 @@
 [Unit]
 Description=Compton compositor
+After=display-manager.service
 
 [Service]
-ExecStart=/usr/bin/compton --config /home/jonathan/compton.conf
+ExecStart=/usr/bin/compton --config /home/jjin/compton.conf
 Environment=DISPLAY=:0
 
 [Install]
