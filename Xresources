@@ -67,7 +67,7 @@ URxvt*cursorColor2: #000000
 ! URxvt*borderColor: colour
 
 ! Select the fonts to be used. This is a comma separated list of font names that
-URxvt*font: xft:Terminus:size=08:antialias=true
+URxvt*font: xft:Terminus:size=16:antialias=true
 !-misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
 
 ! URxvt*boldFont: fontlist
@@ -308,7 +308,7 @@ Emacs.mode-line.attributeForeground: #000000
 Emacs.mode-line.attributeBackground: #000000
 Emacs.mode-line.attributeBox: (:line-width 1 :color "#000000")
 
-Xft.dpi: 211
+Xft.dpi: 192
 Xft.autohint: no
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintfull
@@ -316,7 +316,7 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 
-rofi.font: Terminus 8
+rofi.font: Terminus 24
 rofi.bg: argb:000a0f14
 rofi.fg: argb:ff98d1ce
 rofi.hlbg: argb:00586E75
