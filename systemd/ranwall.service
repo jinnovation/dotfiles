@@ -3,5 +3,5 @@ Description=Randomly change the wallpaper
 
 [Service]
 Type=simple
-Environment="BGDIR=/home/jonathan/Dropbox/Images/Wallpapers" DISPLAY=:0
+Environment="BGDIR=/home/jjin/Dropbox/Images/Wallpapers" DISPLAY=:0
 ExecStart=/usr/bin/feh --randomize --bg-fill --no-fehbg $BGDIR

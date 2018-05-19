@@ -1,9 +1,11 @@
 [Unit]
 Description=Adjust the color temperature of your screen according to your surroundings
+After=display-manager.service
 
 [Service]
 ExecStart=/usr/bin/redshift -v
 Environment=DISPLAY=:0
+Restart=always
 
 [Install]
 WantedBy=default.target

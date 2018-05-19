@@ -1,5 +1,6 @@
 [Unit]
 Description=Periodically randomly change the wallpaper
+After=display-manager.service
 
 [Timer]
 OnActiveSec=0min
