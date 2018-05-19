@@ -244,12 +244,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad-
 
 fi
 
-alias be='bundle exec'
-alias bi='bundle install'
 alias gs='git status'
-
-source /usr/share/chruby/chruby.sh
-eval "$(rbenv init -)"
 
 PATH="/home/jjin/perl5/bin${PATH+:}${PATH}"; export PATH;
 PERL5LIB="/home/jjin/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
