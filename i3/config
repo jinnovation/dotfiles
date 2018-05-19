@@ -128,36 +128,16 @@ mode "" {
 
 bindsym Mod4+r mode ""
 
-bar {
-    i3bar_command i3bar
-    position top
-    status_command i3blocks
-    strip_workspace_numbers yes
-    output eDP1
-
-    colors {
-        background #000000
-        statusline #999999
-        separator  #444444
-
-    	# class		       border  backgr. text
-        focused_workspace  #000000 #000000 #dddddd
-        active_workspace   #000000 #000000 #ffffff
-        inactive_workspace #000000 #000000 #666666
-        urgent_workspace   #000000 #000000 #900000
-    }
-}
-
 new_float none
 new_window pixel 1
 
 # TODO: extract all bindings away from being i3-exclusive
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
 
-bindsym XF86AudioLowerVolume exec amixer -D pulse set Master 5%-
-bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 5%+
-bindsym XF86AudioMute exec amixer -D pulse set Master toggle
+bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
+bindsym XF86AudioMute exec amixer set Master toggle
 
 bindsym XF86LaunchA exec --no-startup-id rofi -show run
 bindsym XF86Explorer exec $term -e ranger
@@ -188,3 +168,5 @@ workspace_auto_back_and_forth yes
 
 gaps inner 8
 smart_borders on
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
