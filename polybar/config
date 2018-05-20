@@ -40,7 +40,7 @@ font-3 = "Font Awesome 5 Free:style=Solid:size=16"
 
 modules-left = i3
 modules-center = 
-modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = xbacklight volume xkeyboard memory wlan eth battery date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -367,5 +367,3 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
-; vim:ft=dosini
