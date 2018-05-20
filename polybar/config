@@ -33,7 +33,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=20;1
+font-0 = "xos4 Terminus:style=Regular:size=24"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=20:antialias=false;1"
 font-3 = "Font Awesome 5 Free:style=Solid:size=16"
@@ -44,6 +44,7 @@ modules-right = xbacklight volume xkeyboard memory wlan eth battery date powerme
 
 tray-position = right
 tray-padding = 2
+tray-transparent = false
 ;tray-transparent = true
 ;tray-background = #0063ff
 
