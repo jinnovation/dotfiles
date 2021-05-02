@@ -82,19 +82,28 @@ fi
 unset GREP_OPTIONS
 
 export DISABLE_AUTO_TITLE=true
-export BGDIR=~/Dropbox/Images/Wallpapers
 export MAILDIR=~/mail
-
-export BROWSER="chromium"
 
 if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
 fi
 
-export NPM_PACKAGES=${HOME}/.npm-packages
-export NODE_PATH=$NPM_PACKAGES/lib/node_modules:$NODE_PATH
-export PATH=$NPM_PACKAGES/bin:$PATH
-
 export SSH_AUTH_SCOK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
-export PATH=$PATH:$HOME/proj/depot_tools
+vterm_printf(){
+    if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ] ); then
+        # Tell tmux to pass the escape sequences through
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
+
+vterm_prompt_end() {
+    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)";
+}
+setopt PROMPT_SUBST
+PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'
