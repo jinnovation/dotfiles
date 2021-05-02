@@ -2,10 +2,10 @@ export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+ZSH=~/.oh-my-zsh/
 
-ZSH_THEME="daveverwer"
-plugins=(archlinux git-extras colored-man grep)
+ZSH_THEME="zhann"
+plugins=(git-extras zsh-syntax-highlighting)
 
 CASE_SENSITIVE="false" # case-insensitive auto-completion 
 
@@ -72,8 +72,6 @@ promptinit
 
 autoload -U colors
 colors
-
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if [ -f $HOME/.aliases ]; then
     source $HOME/.aliases
