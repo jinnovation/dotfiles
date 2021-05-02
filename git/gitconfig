@@ -1,6 +1,6 @@
 [user]
 	name           = Jonathan Jin
-	email          = jjin082693@gmail.com
+	email          = me@jonathanj.in
 
 [core]
 	editor         = vim
@@ -16,6 +16,7 @@
 	unstage        = reset HEAD --
 	last           = log -1 HEAD
 	co             = checkout
+	cop            = checkout @{-1}
 	st             = status
 	lg             = log --graph --color --all --decorate
 	lgo            = log --graph --color --all --pretty=oneline-author
@@ -25,6 +26,7 @@
 
 [push]
 	default        = current
+	rebase         = ff-only
 
 [pretty]
 	oneline-author = "%C(auto)%h%d %Cblue%an %Creset%s"
