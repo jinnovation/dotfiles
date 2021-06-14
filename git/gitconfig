@@ -1,6 +1,7 @@
 [user]
 	name           = Jonathan Jin
 	email          = me@jonathanj.in
+	signingkey     = B15F9CE22E093814
 
 [core]
 	editor         = vim
@@ -33,3 +34,11 @@
 
 [include]
 	path = ~/.gitconfig_local
+
+[commit]
+	gpgsign = true
+
+
+[gpg]
+	program = gpg
+
