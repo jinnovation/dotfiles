@@ -32,8 +32,8 @@
 [pretty]
 	oneline-author = "%C(auto)%h%d %Cblue%an %Creset%s"
 
-[include]
-	path = ~/.gitconfig_local
+[includeIf "gitdir:workspace/"]
+	path = ~/.gitconfig_work
 
 [commit]
 	gpgsign = true
@@ -41,4 +41,3 @@
 
 [gpg]
 	program = gpg
-
