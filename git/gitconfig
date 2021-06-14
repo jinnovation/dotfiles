@@ -41,3 +41,7 @@
 
 [gpg]
 	program = gpg
+
+# Useful for github.com/magit/forge
+[github]
+	user = jinnovation
