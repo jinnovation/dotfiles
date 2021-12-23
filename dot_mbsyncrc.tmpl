@@ -1,0 +1,79 @@
+IMAPAccount personal
+Host imap.fastmail.com
+User {{.email}}
+PassCmd "security find-internet-password -l smtp.fastmail.com -a {{.email}} -w"
+AuthMechs LOGIN
+SSLType IMAPS
+SSLVersions TLSv1.1
+SystemCertificates yes
+Timeout 180
+
+IMAPStore personal-remote
+Account personal
+
+MaildirStore personal-local
+Path ~/mail/personal/
+Inbox ~/mail/personal/INBOX
+
+Channel personal-everything
+Far :personal-remote:
+Near :personal-local:
+Patterns *
+Expunge Both
+CopyArrivalDate yes
+Sync All
+Create Near
+SyncState *
+
+
+IMAPAccount work
+Host imap.gmail.com
+User {{.workemail}}
+PassCmd "security find-internet-password -l smtp.gmail.com -a {{.workemail}} -w"
+AuthMechs LOGIN
+SSLType IMAPS
+SSLVersions TLSv1.1
+SystemCertificates yes
+Timeout 180
+
+IMAPStore work-remote
+Account work
+
+MaildirStore work-local
+Path ~/mail/work/
+Inbox ~/mail/work/INBOX
+
+Channel work-inbox
+Far :work-remote:
+Near :work-local:
+Patterns "INBOX"
+Create Both
+Expunge Both
+SyncState *
+
+Channel work-trash
+Far :work-remote:"[Gmail]/Trash"
+Near :work-local:"trash"
+Create Both
+Expunge Both
+SyncState *
+
+Channel work-sent
+Far :work-remote:"[Gmail]/Sent Mail"
+Near :work-local:"sent"
+Create Both
+Expunge Both
+SyncState *
+
+Channel work-all
+Far :work-remote:"[Gmail]/All Mail"
+Near :work-local:"archive"
+Create Both
+Expunge Both
+SyncState *
+
+Group work
+Channel work-inbox
+Channel work-trash
+Channel work-sent
+Channel work-all

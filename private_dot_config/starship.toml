@@ -1,0 +1,68 @@
+add_newline = false
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vicmd_symbol = "[<](bold green)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[conda]
+symbol = "conda "
+
+[crystal]
+symbol = "cr "
+
+[cmake]
+symbol = "cmake "
+
+[directory]
+read_only = " ro"
+
+[docker_context]
+symbol = "docker "
+
+[gcloud]
+symbol = "gcp "
+
+[git_branch]
+symbol = "git "
+
+[golang]
+symbol = "go "
+
+[kubernetes]
+symbol = "k8s "
+disabled = false
+
+[memory_usage]
+symbol = "memory "
+
+[nix_shell]
+symbol = "nix "
+
+[package]
+symbol = "pkg "
+
+[python]
+symbol = "py "
+
+[rust]
+symbol = "rs "
+
+[scala]
+symbol = "scala "
+
+[sudo]
+symbol = "sudo "
+
+[swift]
+symbol = "swift "
