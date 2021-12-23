@@ -1,5 +1,4 @@
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
+export EDITOR=emacsclient
 
 # Path to your oh-my-zsh installation.
 ZSH=~/.oh-my-zsh/
