@@ -1,1 +1,0 @@
-/home/jjin/dotfiles/vim-plug/plug.vim
