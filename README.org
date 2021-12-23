@@ -1,0 +1,18 @@
+#+TITLE: Dotfiles
+#+AUTHOR: Jonathan Jin
+
+* Overview
+  
+  Dotfiles. You know the drill.
+
+* Installation
+
+  These dotfiles are managed with [[https://www.chezmoi.io/][chezmoi]].
+
+  #+begin_src bash
+    brew install chezmoi
+  #+end_src
+
+  #+begin_src bash
+    chezmoi init jinnovation/dotfiles
+  #+end_src
