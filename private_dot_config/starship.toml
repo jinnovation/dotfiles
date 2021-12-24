@@ -1,5 +1,12 @@
 add_newline = false
 
+right_format = """
+$python\
+$git\
+$gcloud\
+$kubernetes
+"""
+
 [character]
 success_symbol = "[>](bold green)"
 error_symbol = "[x](bold red)"
@@ -31,17 +38,21 @@ read_only = " ro"
 symbol = "docker "
 
 [gcloud]
-symbol = "gcp "
+symbol = "gcp:"
+format = "[$symbol$account(@$domain)(($region))]($style) "
+style = "bold green"
 
 [git_branch]
 symbol = "git "
+format = "[$symbol$branch]($style) "
 
 [golang]
 symbol = "go "
 
 [kubernetes]
-symbol = "k8s "
+symbol = "k8s:"
 disabled = false
+format = "[$symbol$context/($namespace)]($style)"
 
 [memory_usage]
 symbol = "memory "
@@ -53,7 +64,8 @@ symbol = "nix "
 symbol = "pkg "
 
 [python]
-symbol = "py "
+format = "[${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
+symbol = "py:"
 
 [rust]
 symbol = "rs "
