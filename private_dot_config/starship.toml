@@ -7,6 +7,9 @@ $gcloud\
 $kubernetes
 """
 
+[battery]
+disabled = true
+
 [character]
 success_symbol = "[>](bold green)"
 error_symbol = "[x](bold red)"
@@ -52,7 +55,7 @@ symbol = "go "
 [kubernetes]
 symbol = "k8s:"
 disabled = false
-format = "[$symbol$context/($namespace)]($style)"
+format = "[$symbol$context\\($namespace\\)]($style)"
 
 [memory_usage]
 symbol = "memory "
