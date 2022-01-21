@@ -1,0 +1,6 @@
+[user]
+	name = Jonathan Jin
+    email = {{.email}}
+
+[github]
+	user = jinnovation

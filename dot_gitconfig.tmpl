@@ -1,6 +1,6 @@
 [user]
 	name           = Jonathan Jin
-	email          = {{.email}}
+	email          = {{.workemail}}
 	signingkey     = B15F9CE22E093814
 
 [core]
@@ -31,6 +31,9 @@
 
 [pretty]
 	oneline-author = "%C(auto)%h%d %Cblue%an %Creset%s"
+
+[includeIf "gitdir:dev/"]
+	path = ~/.gitconfig_personal
 
 [includeIf "gitdir:workspace/"]
 	path = ~/.gitconfig_work
