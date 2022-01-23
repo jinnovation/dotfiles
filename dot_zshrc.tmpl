@@ -85,6 +85,10 @@ if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
 fi
 
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1 
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 export SSH_AUTH_SCOK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 vterm_printf(){
