@@ -1,6 +1,7 @@
 add_newline = false
 
 format = """
+$time\
 $username\
 $directory\
 $git_branch\
@@ -11,6 +12,10 @@ $kubernetes\
 $line_break\
 $character
 """
+
+[time]
+disabled = false
+format = "[$time]($style) "
 
 [battery]
 disabled = true
