@@ -1,10 +1,15 @@
 add_newline = false
 
-right_format = """
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
 $python\
-$git\
 $gcloud\
-$kubernetes
+$kubernetes\
+$line_break\
+$character
 """
 
 [battery]
