@@ -8,6 +8,7 @@ $git_branch\
 $git_status\
 $python\
 $gcloud\
+$conda\
 $kubernetes\
 $line_break\
 $character
@@ -36,7 +37,9 @@ renamed = "r"
 deleted = "x"
 
 [conda]
-symbol = "conda "
+ignore_base = false
+disabled = false
+format = "[$symbol$environment]($style) "
 
 [crystal]
 symbol = "cr "
