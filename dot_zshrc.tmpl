@@ -114,8 +114,5 @@ PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
 
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
 export PATH="$(go env GOPATH)/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
