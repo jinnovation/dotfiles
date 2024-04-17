@@ -7,7 +7,7 @@ $directory\
 $git_branch\
 $git_status\
 $python\
-$gcloud\
+$aws\
 $conda\
 $kubernetes\
 $line_break\
