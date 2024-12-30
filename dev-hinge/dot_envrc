@@ -1,0 +1,9 @@
+CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token --domain mle --domain-owner 133521830290 --query authorizationToken --output text)
+
+export UV_INDEX_CODEARTIFACT_USERNAME=aws
+export UV_INDEX_CODEARTIFACT_PASSWORD=$CODEARTIFACT_AUTH_TOKEN
+
+export UV_PUBLISH_USERNAME=aws
+export UV_PUBLISH_PASSWORD=$CODEARTIFACT_AUTH_TOKEN
+
+export PIP_INDEX_URL=https://aws:$CODEARTIFACT_AUTH_TOKEN@mle-133521830290.d.codeartifact.us-east-1.amazonaws.com/pypi/python/simple/ 
