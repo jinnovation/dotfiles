@@ -2,7 +2,7 @@ add_newline = false
 
 format = """
 $time\
-$username\
+$direnv\
 $directory\
 $git_branch\
 $git_status\
@@ -13,6 +13,8 @@ $kubernetes\
 $line_break\
 $character
 """
+[direnv]
+disabled = false
 
 [time]
 disabled = false
@@ -59,7 +61,6 @@ format = "[$symbol$account(@$domain)(($region))]($style) "
 style = "bold green"
 
 [git_branch]
-symbol = "git "
 format = "[$symbol$branch]($style) "
 
 [golang]
